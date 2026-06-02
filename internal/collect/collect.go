@@ -228,6 +228,41 @@ func (u *Utterance) Phases() []Phase {
 	return ps
 }
 
+// Timing is the JSON-serializable per-utterance record written live to the
+// timings file the moment an utterance finishes, so the data is never lost when
+// the on-screen view moves to the next phrase.
+type Timing struct {
+	UttID      string             `json:"utt_id"`
+	Category   string             `json:"category,omitempty"`
+	Path       string             `json:"path"`
+	StepsMs    map[string]float64 `json:"steps_ms"` // step name -> how long it took
+	EndToEndMs float64            `json:"end_to_end_ms,omitempty"`
+	NoSpeak    bool               `json:"no_speak,omitempty"`
+	Err        string             `json:"err,omitempty"`
+}
+
+// Timing builds the serializable record for this utterance.
+func (u *Utterance) Timing() Timing {
+	steps := map[string]float64{}
+	for _, p := range u.Phases() {
+		if p.OK {
+			steps[p.Name] = p.TookMs
+		}
+	}
+	t := Timing{
+		UttID:    string(u.UttID),
+		Category: u.Category,
+		Path:     u.Path(),
+		StepsMs:  steps,
+		NoSpeak:  u.NoSpeak,
+		Err:      u.Err,
+	}
+	if v, ok := u.Metric(ME2E); ok {
+		t.EndToEndMs = v
+	}
+	return t
+}
+
 // Joiner accumulates MetricEvents into open utterances and finalizes them.
 type Joiner struct {
 	mu      sync.Mutex

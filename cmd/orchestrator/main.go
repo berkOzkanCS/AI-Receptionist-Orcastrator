@@ -13,6 +13,7 @@ package main
 
 import (
 	"context"
+	"encoding/json"
 	"flag"
 	"fmt"
 	"os"
@@ -53,6 +54,18 @@ func main() {
 
 	startMs := time.Now().UnixMilli()
 
+	// Run directory + live timings file: every finished utterance is appended
+	// here the instant it completes, so the data is never lost even as the
+	// on-screen view moves to the next phrase.
+	runDir := filepath.Join(cfg.RunsDir, time.Now().Format("20060102-150405"))
+	_ = os.MkdirAll(runDir, 0o755)
+	timingsPath := filepath.Join(runDir, "timings.jsonl")
+	timingsFile, _ := os.OpenFile(timingsPath, os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0o644)
+	if timingsFile != nil {
+		defer timingsFile.Close()
+	}
+	var timingsMu sync.Mutex
+
 	// The live UI is created only after all children are ready (so its alt-screen
 	// doesn't fight the startup logs). Until then, status goes to stderr.
 	var uiPtr atomic.Pointer[tui.UI]
@@ -74,6 +87,14 @@ func main() {
 		uttMu.Lock()
 		doneUtts = append(doneUtts, u)
 		uttMu.Unlock()
+		// Append this utterance's timing to the live JSON file immediately.
+		if timingsFile != nil {
+			if b, err := json.Marshal(u.Timing()); err == nil {
+				timingsMu.Lock()
+				_, _ = timingsFile.Write(append(b, '\n'))
+				timingsMu.Unlock()
+			}
+		}
 		if ui := uiPtr.Load(); ui != nil {
 			ui.OnUtterance(u)
 			ui.OnStats(agg.Snapshot(stats.LiveWindow))
@@ -168,7 +189,7 @@ func main() {
 	rawCopy := append([]sharedmetrics.MetricEvent(nil), rawBuf...)
 	rawMu.Unlock()
 
-	dir := filepath.Join(cfg.RunsDir, time.Now().Format("20060102-150405"))
+	dir := runDir // same dir the live timings.jsonl went to
 	paths, err := rep.WriteFiles(dir, rawCopy)
 
 	// Full per-utterance step timeline (every stage of every utterance).
@@ -180,6 +201,9 @@ func main() {
 		if werr := os.WriteFile(detailsPath, []byte(report.RenderDetails(uttCopy)), 0o644); werr == nil {
 			paths = append(paths, detailsPath)
 		}
+	}
+	if timingsFile != nil {
+		paths = append(paths, timingsPath)
 	}
 
 	fmt.Print(rep.RenderText())
