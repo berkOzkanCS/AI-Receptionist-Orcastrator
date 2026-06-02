@@ -1,0 +1,65 @@
+{
+  "session": {
+    "started_ms": 1780409080052,
+    "ended_ms": 1780409214822,
+    "duration_ms": 134770,
+    "mode": "live",
+    "exit": "graceful"
+  },
+  "stages": {
+    "end_to_end": {
+      "count": 4,
+      "min": 4203,
+      "avg": 4753.25,
+      "p50": 4522,
+      "p95": 5616.449999999999,
+      "max": 5766
+    },
+    "llm_decision": {
+      "count": 0,
+      "min": 0,
+      "avg": 0,
+      "p50": 0,
+      "p95": 0,
+      "max": 0
+    },
+    "llm_gemini": {
+      "count": 4,
+      "min": 643,
+      "avg": 733.75,
+      "p50": 718,
+      "p95": 840.8499999999999,
+      "max": 856
+    },
+    "stt_final": {
+      "count": 4,
+      "min": 3031,
+      "avg": 3527,
+      "p50": 3256.5,
+      "p95": 4397.799999999999,
+      "max": 4564
+    },
+    "tts_first_byte": {
+      "count": 2,
+      "min": 455.976,
+      "avg": 487.813,
+      "p50": 487.813,
+      "p95": 516.4662999999999,
+      "max": 519.65
+    },
+    "tts_played": {
+      "count": 4,
+      "min": 456,
+      "avg": 491,
+      "p50": 490.5,
+      "p95": 525.95,
+      "max": 527
+    }
+  },
+  "counts": {
+    "total": 6,
+    "completed": 4,
+    "no_speak": 2,
+    "errored": 0
+  }
+}

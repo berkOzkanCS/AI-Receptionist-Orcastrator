@@ -10,6 +10,7 @@ import (
 	"time"
 
 	sharedmetrics "github.com/ai-receptionist/shared/metrics"
+	"github.com/ai-receptionist/shared/wire"
 )
 
 // Socket paths used across the pipeline. The data sockets are owned by the
@@ -68,6 +69,9 @@ func (c Config) Children() []ChildSpec {
 	env := []string{
 		"ORCH_HEADLESS=1",
 		sharedmetrics.EnvSocket + "=" + c.MetricsSock,
+		// Half-duplex speaking gate: both STT and TTS agree on this socket so STT
+		// can mute its mic while TTS is talking (stops acoustic feedback).
+		wire.EnvSpeakingSocket + "=" + wire.DefaultSpeakingSocket,
 	}
 	stt := []string{"go", "run", "./cmd"}
 	llm := []string{"go", "run", "./cmd/consumer"}

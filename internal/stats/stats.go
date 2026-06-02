@@ -25,6 +25,16 @@ type StageStats struct {
 	Max   float64 `json:"max"`
 }
 
+// PathCounts tallies which response path each utterance took. The flags are not
+// mutually exclusive (an utterance can play a filler and then an LLM reply), so
+// these are independent counts.
+type PathCounts struct {
+	Filler  int `json:"filler"`  // a time-buying filler was spoken
+	Catalog int `json:"catalog"` // a predetermined catalog answer was spoken
+	LLM     int `json:"llm"`     // a Gemini-generated reply was spoken
+	Gemini  int `json:"gemini"`  // a Gemini call was made (verify or answer)
+}
+
 // Snapshot is a point-in-time view of every metric plus session counts.
 type Snapshot struct {
 	Stages    map[string]StageStats `json:"stages"`
@@ -32,6 +42,7 @@ type Snapshot struct {
 	Completed int                   `json:"completed"` // reached tts.played
 	NoSpeak   int                   `json:"no_speak"`  // STT final but no audio produced
 	Errored   int                   `json:"errored"`
+	Paths     PathCounts            `json:"paths"`
 }
 
 // Aggregator accumulates samples per derived metric key.
@@ -42,6 +53,7 @@ type Aggregator struct {
 	completed int
 	noSpeak   int
 	errored   int
+	paths     PathCounts
 }
 
 // New returns an empty Aggregator.
@@ -63,6 +75,18 @@ func (a *Aggregator) Observe(u *collect.Utterance) {
 	default:
 		a.completed++
 	}
+	if u.UsedFiller() {
+		a.paths.Filler++
+	}
+	if u.UsedCatalog() {
+		a.paths.Catalog++
+	}
+	if u.UsedLLM() {
+		a.paths.LLM++
+	}
+	if u.GeminiCalled() {
+		a.paths.Gemini++
+	}
 	for _, d := range collect.DisplayOrder {
 		if v, ok := u.Metric(d.Key); ok {
 			a.series[d.Key] = append(a.series[d.Key], v)
@@ -81,6 +105,7 @@ func (a *Aggregator) Snapshot(window int) Snapshot {
 		Completed: a.completed,
 		NoSpeak:   a.noSpeak,
 		Errored:   a.errored,
+		Paths:     a.paths,
 	}
 	for _, d := range collect.DisplayOrder {
 		samples := a.series[d.Key]

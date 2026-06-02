@@ -1,0 +1,34 @@
+{"utt_id":"1780413757773-1","stage":"stt.speech_start","system":"stt","ts_ms":1780413757773}
+{"utt_id":"1780413757773-1","stage":"llm.regex_hit","system":"llm","ts_ms":1780413759696,"delta_ms":1923,"category":"appointments","text":"randevu"}
+{"utt_id":"1780413757773-1","stage":"llm.regex_hit","system":"llm","ts_ms":1780413759697,"delta_ms":1924,"category":"appointments.booking","text":"randevu almak"}
+{"utt_id":"1780413757773-1","stage":"llm.decision","system":"llm","ts_ms":1780413759697,"delta_ms":1924,"kind":"answer","category":"appointments.booking"}
+{"utt_id":"1780413757773-1","stage":"llm.dropped","system":"llm","ts_ms":1780413759702,"delta_ms":1924,"kind":"answer","category":"appointments.booking"}
+{"utt_id":"1780413757773-1","stage":"stt.final","system":"stt","ts_ms":1780413760389,"delta_ms":498,"text":"yarın için bir randevu almak istiyorum."}
+{"utt_id":"1780413757773-1","stage":"llm.gemini_start","system":"llm","ts_ms":1780413760390,"kind":"answer","category":"appointments.booking"}
+{"utt_id":"1780413757773-1","stage":"llm.emit","system":"llm","ts_ms":1780413761074,"delta_ms":3300,"kind":"llm","category":"appointments.booking","text":"Elbette, yarın için randevu oluşturabilirim."}
+{"utt_id":"1780413757773-1","stage":"llm.gemini","system":"llm","ts_ms":1780413761074,"delta_ms":684,"kind":"llm","category":"appointments.booking","text":"Elbette, yarın için randevu oluşturabilirim."}
+{"utt_id":"1780413757773-1","stage":"tts.arrival","system":"tts","ts_ms":1780413761074,"seq":1,"kind":"llm","category":"appointments.booking"}
+{"utt_id":"","stage":"llm.embedding_hit","system":"llm","ts_ms":1780413761233,"category":"logistics.payment","score":0.7276527285575867}
+{"utt_id":"","stage":"llm.embedding_hit","system":"llm","ts_ms":1780413761243,"delta_ms":10,"category":"appointments.booking","score":1}
+{"utt_id":"","stage":"llm.embedding_hit","system":"llm","ts_ms":1780413761252,"delta_ms":19,"category":"appointments.booking","score":0.9453302621841431}
+{"utt_id":"","stage":"llm.embedding_hit","system":"llm","ts_ms":1780413761252,"delta_ms":19,"category":"appointments.booking","score":0.9453302621841431,"committed":true}
+{"utt_id":"","stage":"llm.decision","system":"llm","ts_ms":1780413761253,"delta_ms":20,"kind":"answer","category":"appointments.booking"}
+{"utt_id":"","stage":"llm.dropped","system":"llm","ts_ms":1780413761253,"delta_ms":20,"kind":"answer","category":"appointments.booking"}
+{"utt_id":"","stage":"llm.embedding_hit","system":"llm","ts_ms":1780413761268,"delta_ms":35,"category":"appointments.booking","score":0.815122127532959}
+{"utt_id":"1780413757773-1","stage":"tts.played","system":"tts","ts_ms":1780413761680,"delta_ms":603.565,"seq":1,"kind":"llm","category":"appointments.booking"}
+{"utt_id":"1780413757773-1","stage":"tts.dial","system":"tts","ts_ms":1780413761385,"delta_ms":308.985,"seq":1,"kind":"llm","category":"appointments.booking"}
+{"utt_id":"1780413757773-1","stage":"tts.first_byte","system":"tts","ts_ms":1780413761680,"delta_ms":603.5,"seq":1,"kind":"llm","category":"appointments.booking"}
+{"utt_id":"1780413757773-1","stage":"tts.final","system":"tts","ts_ms":1780413761736,"delta_ms":603.565,"seq":1,"kind":"llm","category":"appointments.booking"}
+{"utt_id":"1780413787093-2","stage":"stt.speech_start","system":"stt","ts_ms":1780413787093}
+{"utt_id":"1780413787093-2","stage":"llm.regex_hit","system":"llm","ts_ms":1780413789405,"delta_ms":2312,"category":"appointments","text":"randevu"}
+{"utt_id":"1780413787093-2","stage":"llm.regex_hit","system":"llm","ts_ms":1780413789469,"delta_ms":2376,"category":"appointments.booking","text":"randevu almak"}
+{"utt_id":"1780413787093-2","stage":"stt.final","system":"stt","ts_ms":1780413789990,"delta_ms":669,"text":"Yarın için randevu almak istiyorum."}
+{"utt_id":"1780413787093-2","stage":"llm.gemini_start","system":"llm","ts_ms":1780413789990,"kind":"answer","category":"appointments.booking"}
+{"utt_id":"","stage":"llm.embedding_hit","system":"llm","ts_ms":1780413790009,"category":"appointments.confirm","score":0.7628358006477356}
+{"utt_id":"1780413787093-2","stage":"llm.emit","system":"llm","ts_ms":1780413791475,"delta_ms":4381,"kind":"llm","category":"appointments.booking","text":"Elbette, yarın için randevu oluşturabiliriz."}
+{"utt_id":"1780413787093-2","stage":"llm.gemini","system":"llm","ts_ms":1780413791475,"delta_ms":1484,"kind":"llm","category":"appointments.booking","text":"Elbette, yarın için randevu oluşturabiliriz."}
+{"utt_id":"1780413787093-2","stage":"tts.arrival","system":"tts","ts_ms":1780413791475,"seq":2,"kind":"llm","category":"appointments.booking"}
+{"utt_id":"1780413787093-2","stage":"tts.played","system":"tts","ts_ms":1780413792107,"delta_ms":631.997,"seq":2,"kind":"llm","category":"appointments.booking"}
+{"utt_id":"1780413787093-2","stage":"tts.dial","system":"tts","ts_ms":1780413791755,"delta_ms":280.011,"seq":2,"kind":"llm","category":"appointments.booking"}
+{"utt_id":"1780413787093-2","stage":"tts.first_byte","system":"tts","ts_ms":1780413792107,"delta_ms":631.849,"seq":2,"kind":"llm","category":"appointments.booking"}
+{"utt_id":"1780413787093-2","stage":"tts.final","system":"tts","ts_ms":1780413792265,"delta_ms":631.997,"seq":2,"kind":"llm","category":"appointments.booking"}

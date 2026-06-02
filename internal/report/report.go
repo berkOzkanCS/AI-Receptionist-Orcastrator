@@ -31,9 +31,10 @@ type Session struct {
 
 // Report is the full session summary.
 type Report struct {
-	Session Session                      `json:"session"`
-	Stages  map[string]stats.StageStats  `json:"stages"`
-	Counts  Counts                       `json:"counts"`
+	Session Session                     `json:"session"`
+	Stages  map[string]stats.StageStats `json:"stages"`
+	Counts  Counts                      `json:"counts"`
+	Paths   stats.PathCounts            `json:"paths"`
 }
 
 // Counts is the breakdown of how utterances ended.
@@ -55,6 +56,7 @@ func Build(snap stats.Snapshot, sess Session) Report {
 			NoSpeak:   snap.NoSpeak,
 			Errored:   snap.Errored,
 		},
+		Paths: snap.Paths,
 	}
 }
 
@@ -80,6 +82,12 @@ func (r Report) RenderText() string {
 	fmt.Fprintln(&b)
 	fmt.Fprintf(&b, "utterances: %d total — %d completed, %d no-speak, %d errored\n",
 		r.Counts.Total, r.Counts.Completed, r.Counts.NoSpeak, r.Counts.Errored)
+	fmt.Fprintln(&b)
+	fmt.Fprintln(&b, "response paths (counts overlap — an utterance may use several):")
+	fmt.Fprintf(&b, "  filler played:        %d\n", r.Paths.Filler)
+	fmt.Fprintf(&b, "  catalog answer:       %d   (predetermined line)\n", r.Paths.Catalog)
+	fmt.Fprintf(&b, "  llm-generated reply:  %d\n", r.Paths.LLM)
+	fmt.Fprintf(&b, "  gemini called:        %d   (verify or answer)\n", r.Paths.Gemini)
 	if r.Session.Exit == "fail_fast" && r.Session.FailCause != "" {
 		fmt.Fprintln(&b)
 		fmt.Fprintln(&b, "---- failed child stderr ----")
@@ -125,6 +133,35 @@ func (r Report) WriteFiles(dir string, raw []sharedmetrics.MetricEvent) ([]strin
 	paths = append(paths, rawPath)
 
 	return paths, nil
+}
+
+// RenderDetails renders, for every utterance of the session, how long each
+// pipeline step took — one duration per step. Written to details.txt.
+func RenderDetails(utts []*collect.Utterance) string {
+	var b strings.Builder
+	fmt.Fprintln(&b, "==================== per-utterance step durations ====================")
+	fmt.Fprintf(&b, "%d utterances — each line is how long THAT step took\n", len(utts))
+	for _, u := range utts {
+		hdr := "utterance " + string(u.UttID)
+		if u.Category != "" {
+			hdr += " · " + u.Category
+		}
+		hdr += " · " + u.Path()
+		fmt.Fprintln(&b)
+		fmt.Fprintln(&b, hdr)
+		fmt.Fprintf(&b, "  %-18s %10s   %s\n", "step", "took", "what it measures")
+		for _, p := range u.Phases() {
+			took := "—"
+			if p.OK {
+				took = fmt.Sprintf("%.0f ms", p.TookMs)
+			}
+			fmt.Fprintf(&b, "  %-18s %10s   %s\n", p.Name, took, p.Note)
+		}
+		if v, ok := u.Metric(collect.ME2E); ok {
+			fmt.Fprintf(&b, "  %-18s %7.0f ms   you start speaking → you hear it\n", "End-to-end (total)", v)
+		}
+	}
+	return b.String()
 }
 
 func firstLine(s string) string {

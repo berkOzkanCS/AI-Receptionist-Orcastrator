@@ -1,0 +1,33 @@
+==================== session report ====================
+mode:     live
+duration: 12.3s
+exit:     fail_fast
+failed:   stt
+cause:    child stt exited: exit status 1
+
+stage          count    min    avg    p50    p95    max
+STT final          0      —      —      —      —      —
+LLM decision       0      —      —      —      —      —
+LLM gemini         0      —      —      —      —      —
+TTS 1st byte       0      —      —      —      —      —
+TTS played         0      —      —      —      —      —
+END-TO-END         0      —      —      —      —      —
+
+utterances: 0 total — 0 completed, 0 no-speak, 0 errored
+
+---- failed child stderr ----
+child stt exited: exit status 1
+last stderr:
+2026/06/02 16:55:48 starting embedding sidecar (this may take a few seconds on first run while the model loads)...
+sidecar load failed: Trying to load a model of incompatible/unknown type. '/var/folders/k9/swjsfqx57mbgjqxj373fklrr0000gn/T/tfhub_modules/26c892ffbc8d7b032f5a95f316e2841ed4f1608c' contains neither 'saved_model.pb' nor 'saved_model.pbtxt'.
+Traceback (most recent call last):
+  File "/Users/aa/Documents/Projects/STT-system/internal/category/embedding/embedder_server.py", line 61, in main
+    model = hub.load(MODEL_URL)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/Users/aa/Documents/Projects/STT-system/internal/category/embedding/.venv/lib/python3.11/site-packages/tensorflow_hub/module_v2.py", line 113, in load
+    raise ValueError("Trying to load a model of incompatible/unknown type. "
+ValueError: Trying to load a model of incompatible/unknown type. '/var/folders/k9/swjsfqx57mbgjqxj373fklrr0000gn/T/tfhub_modules/26c892ffbc8d7b032f5a95f316e2841ed4f1608c' contains neither 'saved_model.pb' nor 'saved_model.pbtxt'.
+2026/06/02 16:56:00 embedding sidecar: sidecar not ready: Trying to load a model of incompatible/unknown type. '/var/folders/k9/swjsfqx57mbgjqxj373fklrr0000gn/T/tfhub_modules/26c892ffbc8d7b032f5a95f316e2841ed4f1608c' contains neither 'saved_model.pb' nor 'saved_model.pbtxt'.
+exit status 1
+
+========================================================

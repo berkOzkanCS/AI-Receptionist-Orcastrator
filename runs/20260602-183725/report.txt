@@ -1,0 +1,22 @@
+==================== session report ====================
+mode:     live
+duration: 36.9s
+exit:     graceful
+
+stage          count    min    avg    p50    p95    max
+Transcribe         1   2877   2877   2877   2877   2877
+Categorize         1   2074   2074   2074   2074   2074
+Decide             1   2224   2224   2224   2224   2224
+LLM (Gemini)       1    692    692    692    692    692
+TTS 1st byte       1    720    720    720    720    720
+TTS played         1    721    721    721    721    721
+END-TO-END         1   4291   4291   4291   4291   4291
+
+utterances: 2 total — 1 completed, 1 no-speak, 0 errored
+
+response paths (counts overlap — an utterance may use several):
+  filler played:        0
+  catalog answer:       0   (predetermined line)
+  llm-generated reply:  1
+  gemini called:        1   (verify or answer)
+========================================================

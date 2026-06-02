@@ -67,8 +67,13 @@ func main() {
 	logStartup("metrics socket up: %s", cfg.MetricsSock)
 
 	agg := stats.New()
+	var uttMu sync.Mutex
+	var doneUtts []*collect.Utterance // every finalized utterance, for the detail file
 	onFinal := func(u *collect.Utterance) {
 		agg.Observe(u)
+		uttMu.Lock()
+		doneUtts = append(doneUtts, u)
+		uttMu.Unlock()
 		if ui := uiPtr.Load(); ui != nil {
 			ui.OnUtterance(u)
 			ui.OnStats(agg.Snapshot(stats.LiveWindow))
@@ -82,6 +87,11 @@ func main() {
 		rawMu.Lock()
 		rawBuf = append(rawBuf, ev)
 		rawMu.Unlock()
+		// Drive the live pipeline indicator: every event, not just finalized
+		// utterances, so the user sees which stage is active in real time.
+		if ui := uiPtr.Load(); ui != nil {
+			ui.OnStage(ev)
+		}
 	}
 	collector := collect.NewCollector(listener.Events(), joiner, onRaw)
 	go collector.Run(ctx)
@@ -105,11 +115,12 @@ func main() {
 	}
 
 	// --- go live ---
+	// All three children are ready by now (Start gated on it). The model is
+	// seeded with that state; do NOT Send to the program before ui.Run starts
+	// its loop — Bubble Tea's Send blocks until the loop receives, so a pre-Run
+	// Send on this goroutine would deadlock before ui.Run is ever reached.
 	ui := tui.New()
 	uiPtr.Store(ui)
-	for _, n := range []string{"stt", "llm", "tts"} {
-		ui.OnChildStatus(n, "ready")
-	}
 
 	// Fail-fast watcher: the first child to die records the cause and cancels ctx
 	// (which quits the TUI). On graceful shutdown, Wait returns once ctx is done.
@@ -159,6 +170,17 @@ func main() {
 
 	dir := filepath.Join(cfg.RunsDir, time.Now().Format("20060102-150405"))
 	paths, err := rep.WriteFiles(dir, rawCopy)
+
+	// Full per-utterance step timeline (every stage of every utterance).
+	uttMu.Lock()
+	uttCopy := append([]*collect.Utterance(nil), doneUtts...)
+	uttMu.Unlock()
+	if derr := os.MkdirAll(dir, 0o755); derr == nil {
+		detailsPath := filepath.Join(dir, "details.txt")
+		if werr := os.WriteFile(detailsPath, []byte(report.RenderDetails(uttCopy)), 0o644); werr == nil {
+			paths = append(paths, detailsPath)
+		}
+	}
 
 	fmt.Print(rep.RenderText())
 	if err != nil {

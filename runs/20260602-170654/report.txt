@@ -1,0 +1,15 @@
+==================== session report ====================
+mode:     live
+duration: 134.8s
+exit:     graceful
+
+stage          count    min    avg    p50    p95    max
+STT final          4   3031   3527   3256   4398   4564
+LLM decision       0      —      —      —      —      —
+LLM gemini         4    643    734    718    841    856
+TTS 1st byte       2    456    488    488    516    520
+TTS played         4    456    491    490    526    527
+END-TO-END         4   4203   4753   4522   5616   5766
+
+utterances: 6 total — 4 completed, 2 no-speak, 0 errored
+========================================================

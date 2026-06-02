@@ -9,6 +9,8 @@ import (
 
 	tea "github.com/charmbracelet/bubbletea"
 
+	sharedmetrics "github.com/ai-receptionist/shared/metrics"
+
 	"github.com/ai-receptionist/orchestrator/internal/collect"
 	"github.com/ai-receptionist/orchestrator/internal/stats"
 )
@@ -45,3 +47,8 @@ func (u *UI) OnChildStatus(name, state string) { u.prog.Send(childStatusMsg{name
 
 // OnError surfaces an async error in the hint bar.
 func (u *UI) OnError(source, msg string) { u.prog.Send(errorMsg{source: source, msg: msg}) }
+
+// OnStage feeds one raw metric event into the live pipeline indicator. Called
+// for every event (not just finalized utterances), so the dashboard shows which
+// stage the in-flight utterance is at, in real time.
+func (u *UI) OnStage(ev sharedmetrics.MetricEvent) { u.prog.Send(stageMsg{ev: ev}) }

@@ -1,0 +1,312 @@
+==================== per-utterance step durations ====================
+52 utterances — each line is how long THAT step took
+
+utterance 1780414124012-1 · appointments · llm
+  step                     took   what it measures
+  Transcription          645 ms   finished speaking → text ready
+  Categorization        1636 ms   started speaking → intent known
+  LLM (Gemini) call      672 ms   the LLM request
+  TTS playback           539 ms   text sent → you hear it
+  End-to-end (total)    3697 ms   you start speaking → you hear it
+
+utterance 1780414124012-1 · appointments · no-speak
+  step                     took   what it measures
+  TTS synthesis          539 ms   text sent → first audio byte
+
+utterance 1780414160749-2 · appointments.booking · llm
+  step                     took   what it measures
+  Transcription          604 ms   finished speaking → text ready
+  Categorization         840 ms   started speaking → intent known
+  LLM (Gemini) call      574 ms   the LLM request
+  TTS playback           634 ms   text sent → you hear it
+  End-to-end (total)    5236 ms   you start speaking → you hear it
+
+utterance 1780414160749-2 · appointments.booking · no-speak
+  step                     took   what it measures
+  TTS synthesis          634 ms   text sent → first audio byte
+
+utterance 1780414182196-3 · appointments · llm
+  step                     took   what it measures
+  Transcription          601 ms   finished speaking → text ready
+  Categorization        2662 ms   started speaking → intent known
+  LLM (Gemini) call      546 ms   the LLM request
+  TTS playback           509 ms   text sent → you hear it
+  End-to-end (total)    4481 ms   you start speaking → you hear it
+
+utterance 1780414182196-3 · appointments.cancel · no-speak
+  step                     took   what it measures
+  TTS synthesis          509 ms   text sent → first audio byte
+
+utterance 1780414196321-4 · appointments · llm
+  step                     took   what it measures
+  Transcription          564 ms   finished speaking → text ready
+  Categorization        1435 ms   started speaking → intent known
+  LLM (Gemini) call      556 ms   the LLM request
+  TTS playback           536 ms   text sent → you hear it
+  End-to-end (total)    3815 ms   you start speaking → you hear it
+
+utterance 1780414196321-4 · appointments · no-speak
+  step                     took   what it measures
+  TTS synthesis          536 ms   text sent → first audio byte
+
+utterance 1780414214079-5 · appointments · llm
+  step                     took   what it measures
+  Transcription          583 ms   finished speaking → text ready
+  Categorization        2034 ms   started speaking → intent known
+  LLM (Gemini) call      567 ms   the LLM request
+  TTS playback           529 ms   text sent → you hear it
+  End-to-end (total)    4401 ms   you start speaking → you hear it
+
+utterance 1780414214079-5 · appointments · no-speak
+  step                     took   what it measures
+  TTS synthesis          529 ms   text sent → first audio byte
+
+utterance 1780414232438-6 · uncategorized · llm
+  step                     took   what it measures
+  Transcription          482 ms   finished speaking → text ready
+  LLM (Gemini) call      584 ms   the LLM request
+  TTS playback           502 ms   text sent → you hear it
+  End-to-end (total)    3907 ms   you start speaking → you hear it
+
+utterance 1780414232438-6 · uncategorized · no-speak
+  step                     took   what it measures
+  TTS synthesis          502 ms   text sent → first audio byte
+
+utterance 1780414245075-7 · appointments · llm
+  step                     took   what it measures
+  Transcription          596 ms   finished speaking → text ready
+  Categorization        2388 ms   started speaking → intent known
+  LLM (Gemini) call      609 ms   the LLM request
+  TTS playback           493 ms   text sent → you hear it
+  End-to-end (total)    3940 ms   you start speaking → you hear it
+
+utterance 1780414245075-7 · appointments.reschedule · no-speak
+  step                     took   what it measures
+  TTS synthesis          493 ms   text sent → first audio byte
+
+utterance 1780414259634-8 · logistics.payment · llm
+  step                     took   what it measures
+  Transcription          477 ms   finished speaking → text ready
+  Categorization         996 ms   started speaking → intent known
+  LLM (Gemini) call      606 ms   the LLM request
+  TTS playback           508 ms   text sent → you hear it
+  End-to-end (total)    4573 ms   you start speaking → you hear it
+
+utterance 1780414259634-8 · appointments · no-speak
+  step                     took   what it measures
+  TTS synthesis          508 ms   text sent → first audio byte
+
+utterance 1780414270934-9 · logistics.address · catalog
+  step                     took   what it measures
+  Categorization        1226 ms   started speaking → intent known
+  TTS playback           540 ms   text sent → you hear it
+  End-to-end (total)    2154 ms   you start speaking → you hear it
+
+utterance 1780414270934-9 · logistics.address · no-speak
+  step                     took   what it measures
+  Transcription          583 ms   finished speaking → text ready
+  Categorization        2391 ms   started speaking → intent known
+  LLM (Gemini) call      544 ms   background check, didn't delay the reply
+  TTS synthesis          540 ms   text sent → first audio byte
+
+utterance 1780414280545-10 · logistics.hours · llm
+  step                     took   what it measures
+  Transcription          593 ms   finished speaking → text ready
+  Categorization        1603 ms   started speaking → intent known
+  LLM (Gemini) call      671 ms   the LLM request
+  TTS playback           533 ms   text sent → you hear it
+  End-to-end (total)    3348 ms   you start speaking → you hear it
+
+utterance 1780414280545-10 · uncategorized · no-speak
+  step                     took   what it measures
+  TTS synthesis          533 ms   text sent → first audio byte
+
+utterance 1780414291477-11 · logistics · catalog
+  step                     took   what it measures
+  Categorization        1623 ms   started speaking → intent known
+  TTS playback           528 ms   text sent → you hear it
+  End-to-end (total)    2151 ms   you start speaking → you hear it
+
+utterance 1780414291477-11 · logistics.hours · no-speak
+  step                     took   what it measures
+  Transcription          587 ms   finished speaking → text ready
+  LLM (Gemini) call      506 ms   background check, didn't delay the reply
+  TTS synthesis          528 ms   text sent → first audio byte
+
+utterance 1780414303998-12 · logistics.parking · llm
+  step                     took   what it measures
+  Transcription          672 ms   finished speaking → text ready
+  Categorization        2114 ms   started speaking → intent known
+  LLM (Gemini) call      585 ms   the LLM request
+  TTS playback           501 ms   text sent → you hear it
+  End-to-end (total)    3517 ms   you start speaking → you hear it
+
+utterance 1780414303998-12 · uncategorized · no-speak
+  step                     took   what it measures
+  TTS synthesis          501 ms   text sent → first audio byte
+
+utterance 1780414313835-13 · logistics · catalog
+  step                     took   what it measures
+  Categorization        1852 ms   started speaking → intent known
+  TTS playback           532 ms   text sent → you hear it
+  End-to-end (total)    2384 ms   you start speaking → you hear it
+
+utterance 1780414316117-14 · logistics.doctor · catalog✓
+  step                     took   what it measures
+  Transcription          591 ms   finished speaking → text ready
+  Categorization         857 ms   started speaking → intent known
+  LLM (Gemini) call      551 ms   background check, didn't delay the reply
+  TTS playback           611 ms   text sent → you hear it
+  End-to-end (total)    1525 ms   you start speaking → you hear it
+
+utterance 1780414313835-13 · logistics.doctor · no-speak
+  step                     took   what it measures
+  TTS synthesis          532 ms   text sent → first audio byte
+
+utterance 1780414316117-14 · logistics.doctor · no-speak
+  step                     took   what it measures
+  LLM (Gemini) call      625 ms   background check, didn't delay the reply
+  TTS synthesis          611 ms   text sent → first audio byte
+
+utterance 1780414326935-15 · logistics.payment · catalog
+  step                     took   what it measures
+  Categorization        1235 ms   started speaking → intent known
+  TTS playback           507 ms   text sent → you hear it
+  End-to-end (total)    1936 ms   you start speaking → you hear it
+
+utterance 1780414335119-16 · logistics · catalog
+  step                     took   what it measures
+  Categorization        2759 ms   started speaking → intent known
+  TTS playback           516 ms   text sent → you hear it
+  End-to-end (total)    3275 ms   you start speaking → you hear it
+
+utterance 1780414326935-15 · logistics.payment · no-speak
+  step                     took   what it measures
+  Transcription          666 ms   finished speaking → text ready
+  Categorization        2260 ms   started speaking → intent known
+  LLM (Gemini) call      496 ms   background check, didn't delay the reply
+  TTS synthesis          507 ms   text sent → first audio byte
+
+utterance 1780414335119-16 · logistics.records · no-speak
+  step                     took   what it measures
+  Transcription          707 ms   finished speaking → text ready
+  LLM (Gemini) call      518 ms   background check, didn't delay the reply
+  TTS synthesis          516 ms   text sent → first audio byte
+
+utterance 1780414348955-17 · appointments.reschedule · llm
+  step                     took   what it measures
+  Transcription          631 ms   finished speaking → text ready
+  Categorization        1039 ms   started speaking → intent known
+  LLM (Gemini) call      648 ms   the LLM request
+  TTS playback           495 ms   text sent → you hear it
+  End-to-end (total)    3435 ms   you start speaking → you hear it
+
+utterance 1780414357295-18 · uncategorized · llm
+  step                     took   what it measures
+  Transcription          595 ms   finished speaking → text ready
+  LLM (Gemini) call      611 ms   the LLM request
+  TTS playback           522 ms   text sent → you hear it
+  End-to-end (total)    3228 ms   you start speaking → you hear it
+
+utterance 1780414348955-17 · pricing.botoks · no-speak
+  step                     took   what it measures
+  TTS synthesis          495 ms   text sent → first audio byte
+
+utterance 1780414365013-19 · pricing.filler · llm
+  step                     took   what it measures
+  Transcription          629 ms   finished speaking → text ready
+  Categorization        1061 ms   started speaking → intent known
+  LLM (Gemini) call      766 ms   the LLM request
+  TTS playback           514 ms   text sent → you hear it
+  End-to-end (total)    3522 ms   you start speaking → you hear it
+
+utterance 1780414357295-18 · uncategorized · no-speak
+  step                     took   what it measures
+  TTS synthesis          522 ms   text sent → first audio byte
+
+utterance 1780414365013-19 · pricing.filler · no-speak
+  step                     took   what it measures
+  TTS synthesis          514 ms   text sent → first audio byte
+
+utterance 1780414374524-20 · pricing · llm
+  step                     took   what it measures
+  Transcription          615 ms   finished speaking → text ready
+  Categorization        1977 ms   started speaking → intent known
+  LLM (Gemini) call      597 ms   the LLM request
+  TTS playback           544 ms   text sent → you hear it
+  End-to-end (total)    3663 ms   you start speaking → you hear it
+
+utterance 1780414374524-20 · pricing · no-speak
+  step                     took   what it measures
+  TTS synthesis          543 ms   text sent → first audio byte
+
+utterance 1780414387768-21 · uncategorized · llm
+  step                     took   what it measures
+  Transcription          595 ms   finished speaking → text ready
+  LLM (Gemini) call      452 ms   the LLM request
+  TTS playback           612 ms   text sent → you hear it
+  End-to-end (total)    3741 ms   you start speaking → you hear it
+
+utterance 1780414387768-21 · uncategorized · no-speak
+  step                     took   what it measures
+  TTS synthesis          612 ms   text sent → first audio byte
+
+utterance 1780414403474-22 · appointments.booking · llm
+  step                     took   what it measures
+  Transcription          592 ms   finished speaking → text ready
+  Categorization        1057 ms   started speaking → intent known
+  LLM (Gemini) call      600 ms   the LLM request
+  TTS playback           510 ms   text sent → you hear it
+  End-to-end (total)    4078 ms   you start speaking → you hear it
+
+utterance 1780414403474-22 · pricing.spot_treatment · no-speak
+  step                     took   what it measures
+  TTS synthesis          510 ms   text sent → first audio byte
+
+utterance 1780414426028-24 · pricing · llm
+  step                     took   what it measures
+  Transcription          626 ms   finished speaking → text ready
+  Categorization         151 ms   started speaking → intent known
+  LLM (Gemini) call      745 ms   the LLM request
+  TTS playback           519 ms   text sent → you hear it
+  End-to-end (total)    1871 ms   you start speaking → you hear it
+
+utterance 1780414426028-24 · pricing · llm
+  step                     took   what it measures
+  Transcription          585 ms   finished speaking → text ready
+  Categorization        2173 ms   started speaking → intent known
+  LLM (Gemini) call      596 ms   the LLM request
+  TTS synthesis          519 ms   text sent → first audio byte
+  TTS playback            15 ms   first byte → you hear it
+  End-to-end (total)    1131 ms   you start speaking → you hear it
+
+utterance 1780414423792-23 · pricing · no-speak
+  step                     took   what it measures
+  Categorization        1425 ms   started speaking → intent known
+
+utterance 1780414426028-24 · pricing · no-speak
+  step                     took   what it measures
+  TTS synthesis          533 ms   text sent → first audio byte
+
+utterance 1780414456568-26 · uncategorized · llm
+  step                     took   what it measures
+  Transcription          653 ms   finished speaking → text ready
+  LLM (Gemini) call      481 ms   the LLM request
+  TTS playback           546 ms   text sent → you hear it
+  End-to-end (total)    1680 ms   you start speaking → you hear it
+
+utterance 1780414456568-26 · pricing.botoks · llm
+  step                     took   what it measures
+  Transcription          634 ms   finished speaking → text ready
+  Categorization        1792 ms   started speaking → intent known
+  LLM (Gemini) call      556 ms   the LLM request
+  TTS synthesis          546 ms   text sent → first audio byte
+  TTS playback            69 ms   first byte → you hear it
+  End-to-end (total)    1172 ms   you start speaking → you hear it
+
+utterance 1780414454070-25 · no-speak
+  step                     took   what it measures
+
+utterance 1780414456568-26 · appointments · no-speak
+  step                     took   what it measures
+  TTS synthesis          616 ms   text sent → first audio byte

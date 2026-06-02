@@ -16,22 +16,26 @@ import (
 )
 
 // Derived display-metric keys. Each maps an utterance's joined stage timestamps
-// to a single latency number for the dashboard and report.
+// to a single latency number for the dashboard and report. The "from speech
+// start" metrics (transcribe, categorize, decide) are elapsed-since-first-word
+// so they're directly comparable; gemini and the tts.* ones are stage durations.
 const (
-	MStt       = "stt_final"      // speech-start -> STT final transcript
-	MDecision  = "llm_decision"   // STT final -> LLM decision emitted
-	MGemini    = "llm_gemini"     // Gemini call duration
-	MFirstByte = "tts_first_byte" // TTS command arrival -> first PCM byte
-	MPlayed    = "tts_played"     // TTS command arrival -> first audio audible
-	ME2E       = "end_to_end"     // speech-start -> first audio audible
+	MStt        = "stt_final"      // speech-start -> STT final transcript (transcription time)
+	MCategorize = "categorize"     // speech-start -> first categorizer hit (how fast intent was known)
+	MDecision   = "llm_decision"   // speech-start -> decision emitted (filler/answer chosen)
+	MGemini     = "llm_gemini"     // Gemini call duration
+	MFirstByte  = "tts_first_byte" // TTS command arrival -> first PCM byte
+	MPlayed     = "tts_played"     // TTS command arrival -> first audio audible
+	ME2E        = "end_to_end"     // speech-start -> first audio audible
 )
 
 // DisplayOrder is the canonical ordering + labels for the metrics, shared by the
 // dashboard and the report so both read the same.
 var DisplayOrder = []struct{ Key, Label string }{
-	{MStt, "STT final"},
-	{MDecision, "LLM decision"},
-	{MGemini, "LLM gemini"},
+	{MStt, "Transcribe"},
+	{MCategorize, "Categorize"},
+	{MDecision, "Decide"},
+	{MGemini, "LLM (Gemini)"},
 	{MFirstByte, "TTS 1st byte"},
 	{MPlayed, "TTS played"},
 	{ME2E, "END-TO-END"},
@@ -52,6 +56,14 @@ type Utterance struct {
 	Text     string
 	Err      string // first stage error seen, if any
 	NoSpeak  bool   // finalized by timeout without ever reaching tts.played
+
+	// Response-path tracking: which kinds of line were spoken, whether Gemini
+	// was called, and how the intent was categorized. Drives the Path() label
+	// and the per-path counts in the report.
+	emitKinds    map[string]bool // "filler" | "answer" | "llm" that were emitted to TTS
+	geminiCalled bool            // a Gemini verify/answer call was dispatched
+	geminiKind   string          // "verify" (checked a catalog answer) | "llm" (generated a reply)
+	catSource    string          // "regex" | "embedding" | "" (uncategorized)
 
 	firstMs int64
 	lastMs  int64
@@ -91,8 +103,27 @@ func (u *Utterance) Metric(key string) (float64, bool) {
 			return v, true
 		}
 		return u.deltaOf(sharedmetrics.StageSTTFinal)
+	case MCategorize:
+		// Earliest categorizer hit, measured as elapsed-from-first-word.
+		r, okR := u.deltaOf(sharedmetrics.StageLLMRegexHit)
+		e, okE := u.deltaOf(sharedmetrics.StageLLMEmbeddingHit)
+		switch {
+		case okR && okE:
+			if e < r {
+				return e, true
+			}
+			return r, true
+		case okR:
+			return r, true
+		case okE:
+			return e, true
+		}
+		return 0, false
 	case MDecision:
-		return u.gap(sharedmetrics.StageSTTFinal, sharedmetrics.StageLLMDecision)
+		// Elapsed-from-first-word to the decision (filler/answer chosen). This is
+		// the engine's own elapsed clock, always positive — the decision can fire
+		// before the final transcript, so a wall gap from stt.final would be empty.
+		return u.deltaOf(sharedmetrics.StageLLMDecision)
 	case MGemini:
 		return u.deltaOf(sharedmetrics.StageLLMGemini)
 	case MFirstByte:
@@ -112,6 +143,89 @@ func (u *Utterance) Metric(key string) (float64, bool) {
 		return u.gap(sharedmetrics.StageSTTFinal, sharedmetrics.StageTTSPlayed)
 	}
 	return 0, false
+}
+
+// UsedFiller reports whether a time-buying filler line was spoken.
+func (u *Utterance) UsedFiller() bool { return u.emitKinds[wire.KindFiller] }
+
+// UsedCatalog reports whether a predetermined catalog answer was spoken.
+func (u *Utterance) UsedCatalog() bool { return u.emitKinds[wire.KindAnswer] }
+
+// UsedLLM reports whether a Gemini-generated reply was spoken.
+func (u *Utterance) UsedLLM() bool { return u.emitKinds[wire.KindLLM] }
+
+// GeminiCalled reports whether a Gemini verify/answer call was dispatched.
+func (u *Utterance) GeminiCalled() bool { return u.geminiCalled }
+
+// Path is a short label for how this utterance was answered, for the dashboard
+// and report: which line(s) were spoken and whether Gemini was involved.
+func (u *Utterance) Path() string {
+	switch {
+	case u.emitKinds[wire.KindLLM]:
+		if u.emitKinds[wire.KindFiller] {
+			return "filler→llm"
+		}
+		return "llm"
+	case u.emitKinds[wire.KindAnswer]:
+		if u.geminiKind == "verify" {
+			return "catalog✓" // predetermined line, Gemini-verified
+		}
+		return "catalog"
+	case u.emitKinds[wire.KindFiller]:
+		return "filler"
+	case u.Err != "":
+		return "error"
+	case u.NoSpeak:
+		return "no-speak"
+	}
+	return "—"
+}
+
+// Phase is one pipeline step and how long it took (a duration, in ms), with a
+// plain-language note of what it measures. This is the simple "where did the
+// time go" view — each phase is an independently-measured duration, not a
+// cumulative offset.
+type Phase struct {
+	Name   string
+	TookMs float64
+	OK     bool // false => this step didn't happen / wasn't measured
+	Note   string
+}
+
+// Phases returns the per-step durations for the utterance: how long each part of
+// the pipeline took. They are measured independently (STT, the LLM call, TTS run
+// partly in parallel with categorization and any early filler), so they do not
+// necessarily sum to the end-to-end total — each answers "how long did THIS step
+// take".
+func (u *Utterance) Phases() []Phase {
+	var ps []Phase
+
+	if d, ok := u.deltaOf(sharedmetrics.StageSTTFinal); ok {
+		ps = append(ps, Phase{"Transcription", d, true, "finished speaking → text ready"})
+	}
+	if d, ok := u.Metric(MCategorize); ok {
+		ps = append(ps, Phase{"Categorization", d, true, "started speaking → intent known"})
+	}
+	if u.geminiCalled {
+		d, ok := u.deltaOf(sharedmetrics.StageLLMGemini)
+		note := "the LLM request"
+		if u.geminiKind == "verify" {
+			note = "background check, didn't delay the reply"
+		}
+		ps = append(ps, Phase{"LLM (Gemini) call", d, ok, note})
+	}
+	fb, okFb := u.deltaOf(sharedmetrics.StageTTSFirstByte)
+	if okFb {
+		ps = append(ps, Phase{"TTS synthesis", fb, true, "text sent → first audio byte"})
+	}
+	if pl, okPl := u.deltaOf(sharedmetrics.StageTTSPlayed); okPl {
+		if okFb && pl >= fb {
+			ps = append(ps, Phase{"TTS playback", pl - fb, true, "first byte → you hear it"})
+		} else {
+			ps = append(ps, Phase{"TTS playback", pl, true, "text sent → you hear it"})
+		}
+	}
+	return ps
 }
 
 // Joiner accumulates MetricEvents into open utterances and finalizes them.
@@ -140,7 +254,12 @@ func (j *Joiner) Add(ev sharedmetrics.MetricEvent) {
 	j.mu.Lock()
 	u := j.open[ev.UttID]
 	if u == nil {
-		u = &Utterance{UttID: ev.UttID, Stages: map[sharedmetrics.Stage]stageRec{}, firstMs: ev.TsMs}
+		u = &Utterance{
+			UttID:     ev.UttID,
+			Stages:    map[sharedmetrics.Stage]stageRec{},
+			emitKinds: map[string]bool{},
+			firstMs:   ev.TsMs,
+		}
 		j.open[ev.UttID] = u
 	}
 	// Keep the earliest timestamp per stage (time-to-first semantics: a filler
@@ -159,6 +278,29 @@ func (j *Joiner) Add(ev sharedmetrics.MetricEvent) {
 	}
 	if ev.Err != "" && u.Err == "" {
 		u.Err = ev.Err
+	}
+	// Track the response path: how the intent was categorized, whether Gemini
+	// was called, and which kinds of line were actually spoken.
+	switch ev.Stage {
+	case sharedmetrics.StageLLMRegexHit:
+		if u.catSource == "" {
+			u.catSource = "regex"
+		}
+	case sharedmetrics.StageLLMEmbeddingHit:
+		if u.catSource == "" {
+			u.catSource = "embedding"
+		}
+	case sharedmetrics.StageLLMGeminiStart:
+		u.geminiCalled = true
+	case sharedmetrics.StageLLMGemini:
+		u.geminiCalled = true
+		if ev.Kind != "" {
+			u.geminiKind = ev.Kind
+		}
+	case sharedmetrics.StageLLMEmit:
+		if ev.Kind != "" {
+			u.emitKinds[ev.Kind] = true
+		}
 	}
 	if ev.TsMs > u.lastMs {
 		u.lastMs = ev.TsMs

@@ -1,0 +1,111 @@
+{"utt_id":"1780409029891-1","stage":"stt.speech_start","system":"stt","ts_ms":1780409029891}
+{"utt_id":"1780409029891-1","stage":"stt.final","system":"stt","ts_ms":1780409031216,"delta_ms":484,"text":"Merhaba"}
+{"utt_id":"1780409029891-1","stage":"llm.gemini_start","system":"llm","ts_ms":1780409031218,"kind":"answer","category":"uncategorized"}
+{"utt_id":"1780409029891-1","stage":"llm.emit","system":"llm","ts_ms":1780409031960,"delta_ms":2068,"kind":"llm","category":"uncategorized","text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409029891-1","stage":"llm.gemini","system":"llm","ts_ms":1780409031961,"delta_ms":742,"kind":"llm","category":"uncategorized","text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409029891-1","stage":"tts.arrival","system":"tts","ts_ms":1780409031961,"seq":1,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409029891-1","stage":"tts.played","system":"tts","ts_ms":1780409032607,"delta_ms":641.369,"seq":1,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409029891-1","stage":"tts.dial","system":"tts","ts_ms":1780409032274,"delta_ms":308.563,"seq":1,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409029891-1","stage":"tts.first_byte","system":"tts","ts_ms":1780409032607,"delta_ms":641.278,"seq":1,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409029891-1","stage":"tts.final","system":"tts","ts_ms":1780409032651,"delta_ms":641.369,"seq":1,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409032968-2","stage":"stt.speech_start","system":"stt","ts_ms":1780409032968}
+{"utt_id":"1780409032968-2","stage":"stt.final","system":"stt","ts_ms":1780409035538,"delta_ms":647,"text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409032968-2","stage":"llm.gemini_start","system":"llm","ts_ms":1780409035540,"kind":"answer","category":"uncategorized"}
+{"utt_id":"1780409032968-2","stage":"llm.emit","system":"llm","ts_ms":1780409036096,"delta_ms":3128,"kind":"llm","category":"uncategorized","text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409032968-2","stage":"llm.gemini","system":"llm","ts_ms":1780409036097,"delta_ms":556,"kind":"llm","category":"uncategorized","text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409032968-2","stage":"tts.arrival","system":"tts","ts_ms":1780409036097,"seq":2,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409032968-2","stage":"tts.played","system":"tts","ts_ms":1780409036592,"delta_ms":494.683,"seq":2,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409032968-2","stage":"tts.dial","system":"tts","ts_ms":1780409036303,"delta_ms":205.32,"seq":2,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409032968-2","stage":"tts.first_byte","system":"tts","ts_ms":1780409036591,"delta_ms":494.173,"seq":2,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409032968-2","stage":"tts.final","system":"tts","ts_ms":1780409036634,"delta_ms":494.683,"seq":2,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409036908-3","stage":"stt.speech_start","system":"stt","ts_ms":1780409036908}
+{"utt_id":"1780409036908-3","stage":"stt.final","system":"stt","ts_ms":1780409039341,"delta_ms":491,"text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409036908-3","stage":"llm.gemini_start","system":"llm","ts_ms":1780409039342,"kind":"answer","category":"uncategorized"}
+{"utt_id":"1780409036908-3","stage":"llm.emit","system":"llm","ts_ms":1780409039808,"delta_ms":2899,"kind":"llm","category":"uncategorized","text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409036908-3","stage":"llm.gemini","system":"llm","ts_ms":1780409039808,"delta_ms":466,"kind":"llm","category":"uncategorized","text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409036908-3","stage":"tts.arrival","system":"tts","ts_ms":1780409039811,"seq":3,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409036908-3","stage":"tts.played","system":"tts","ts_ms":1780409040251,"delta_ms":440.289,"seq":3,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409036908-3","stage":"tts.dial","system":"tts","ts_ms":1780409039996,"delta_ms":184.962,"seq":3,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409036908-3","stage":"tts.first_byte","system":"tts","ts_ms":1780409040251,"delta_ms":440.216,"seq":3,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409036908-3","stage":"tts.final","system":"tts","ts_ms":1780409040296,"delta_ms":440.289,"seq":3,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409040590-4","stage":"stt.speech_start","system":"stt","ts_ms":1780409040590}
+{"utt_id":"1780409040590-4","stage":"stt.final","system":"stt","ts_ms":1780409043193,"delta_ms":521,"text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409040590-4","stage":"llm.gemini_start","system":"llm","ts_ms":1780409043193,"kind":"answer","category":"uncategorized"}
+{"utt_id":"1780409040590-4","stage":"llm.emit","system":"llm","ts_ms":1780409043809,"delta_ms":3218,"kind":"llm","category":"uncategorized","text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409040590-4","stage":"llm.gemini","system":"llm","ts_ms":1780409043809,"delta_ms":615,"kind":"llm","category":"uncategorized","text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409040590-4","stage":"tts.arrival","system":"tts","ts_ms":1780409043809,"seq":4,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409040590-4","stage":"tts.played","system":"tts","ts_ms":1780409044257,"delta_ms":447.82,"seq":4,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409040590-4","stage":"tts.dial","system":"tts","ts_ms":1780409043996,"delta_ms":186.688,"seq":4,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409040590-4","stage":"tts.first_byte","system":"tts","ts_ms":1780409044257,"delta_ms":447.736,"seq":4,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409040590-4","stage":"tts.final","system":"tts","ts_ms":1780409044304,"delta_ms":447.82,"seq":4,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409044590-5","stage":"stt.speech_start","system":"stt","ts_ms":1780409044590}
+{"utt_id":"1780409044590-5","stage":"stt.final","system":"stt","ts_ms":1780409047554,"delta_ms":564,"text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409044590-5","stage":"llm.gemini_start","system":"llm","ts_ms":1780409047554,"kind":"answer","category":"uncategorized"}
+{"utt_id":"1780409044590-5","stage":"llm.emit","system":"llm","ts_ms":1780409048050,"delta_ms":3459,"kind":"llm","category":"uncategorized","text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409044590-5","stage":"llm.gemini","system":"llm","ts_ms":1780409048050,"delta_ms":495,"kind":"llm","category":"uncategorized","text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409044590-5","stage":"tts.arrival","system":"tts","ts_ms":1780409048050,"seq":5,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409044590-5","stage":"tts.played","system":"tts","ts_ms":1780409048502,"delta_ms":451.969,"seq":5,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409044590-5","stage":"tts.dial","system":"tts","ts_ms":1780409048241,"delta_ms":190.515,"seq":5,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409044590-5","stage":"tts.first_byte","system":"tts","ts_ms":1780409048502,"delta_ms":451.865,"seq":5,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409044590-5","stage":"tts.final","system":"tts","ts_ms":1780409048544,"delta_ms":451.969,"seq":5,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409048828-6","stage":"stt.speech_start","system":"stt","ts_ms":1780409048828}
+{"utt_id":"1780409048828-6","stage":"stt.final","system":"stt","ts_ms":1780409051396,"delta_ms":605,"text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409048828-6","stage":"llm.gemini_start","system":"llm","ts_ms":1780409051397,"kind":"answer","category":"uncategorized"}
+{"utt_id":"1780409048828-6","stage":"llm.emit","system":"llm","ts_ms":1780409051931,"delta_ms":3103,"kind":"llm","category":"uncategorized","text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409048828-6","stage":"llm.gemini","system":"llm","ts_ms":1780409051931,"delta_ms":534,"kind":"llm","category":"uncategorized","text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409048828-6","stage":"tts.arrival","system":"tts","ts_ms":1780409051931,"seq":6,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409048828-6","stage":"tts.played","system":"tts","ts_ms":1780409052406,"delta_ms":474.256,"seq":6,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409048828-6","stage":"tts.dial","system":"tts","ts_ms":1780409052131,"delta_ms":199.541,"seq":6,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409048828-6","stage":"tts.first_byte","system":"tts","ts_ms":1780409052405,"delta_ms":474.167,"seq":6,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409048828-6","stage":"tts.final","system":"tts","ts_ms":1780409052460,"delta_ms":474.256,"seq":6,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409052751-7","stage":"stt.speech_start","system":"stt","ts_ms":1780409052751}
+{"utt_id":"1780409052751-7","stage":"stt.final","system":"stt","ts_ms":1780409055341,"delta_ms":509,"text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409052751-7","stage":"llm.gemini_start","system":"llm","ts_ms":1780409055341,"kind":"answer","category":"uncategorized"}
+{"utt_id":"1780409052751-7","stage":"llm.emit","system":"llm","ts_ms":1780409055860,"delta_ms":3109,"kind":"llm","category":"uncategorized","text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409052751-7","stage":"llm.gemini","system":"llm","ts_ms":1780409055860,"delta_ms":519,"kind":"llm","category":"uncategorized","text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409052751-7","stage":"tts.arrival","system":"tts","ts_ms":1780409055860,"seq":7,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409052751-7","stage":"tts.played","system":"tts","ts_ms":1780409056297,"delta_ms":436.411,"seq":7,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409052751-7","stage":"tts.dial","system":"tts","ts_ms":1780409056048,"delta_ms":188.04,"seq":7,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409052751-7","stage":"tts.first_byte","system":"tts","ts_ms":1780409056297,"delta_ms":436.333,"seq":7,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409052751-7","stage":"tts.final","system":"tts","ts_ms":1780409056339,"delta_ms":436.411,"seq":7,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409056649-8","stage":"stt.speech_start","system":"stt","ts_ms":1780409056649}
+{"utt_id":"1780409056649-8","stage":"stt.final","system":"stt","ts_ms":1780409059191,"delta_ms":602,"text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409056649-8","stage":"llm.gemini_start","system":"llm","ts_ms":1780409059191,"kind":"answer","category":"uncategorized"}
+{"utt_id":"1780409056649-8","stage":"llm.emit","system":"llm","ts_ms":1780409059735,"delta_ms":3085,"kind":"llm","category":"uncategorized","text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409056649-8","stage":"llm.gemini","system":"llm","ts_ms":1780409059735,"delta_ms":543,"kind":"llm","category":"uncategorized","text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409056649-8","stage":"tts.arrival","system":"tts","ts_ms":1780409059735,"seq":8,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409056649-8","stage":"tts.played","system":"tts","ts_ms":1780409060185,"delta_ms":449.031,"seq":8,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409056649-8","stage":"tts.dial","system":"tts","ts_ms":1780409059925,"delta_ms":189.17,"seq":8,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409056649-8","stage":"tts.first_byte","system":"tts","ts_ms":1780409060185,"delta_ms":448.992,"seq":8,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409056649-8","stage":"tts.final","system":"tts","ts_ms":1780409060227,"delta_ms":449.031,"seq":8,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409060513-9","stage":"stt.speech_start","system":"stt","ts_ms":1780409060513}
+{"utt_id":"1780409060513-9","stage":"stt.final","system":"stt","ts_ms":1780409063075,"delta_ms":604,"text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409060513-9","stage":"llm.gemini_start","system":"llm","ts_ms":1780409063075,"kind":"answer","category":"uncategorized"}
+{"utt_id":"1780409060513-9","stage":"llm.emit","system":"llm","ts_ms":1780409063574,"delta_ms":3060,"kind":"llm","category":"uncategorized","text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409060513-9","stage":"llm.gemini","system":"llm","ts_ms":1780409063574,"delta_ms":498,"kind":"llm","category":"uncategorized","text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409060513-9","stage":"tts.arrival","system":"tts","ts_ms":1780409063574,"seq":9,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409060513-9","stage":"tts.played","system":"tts","ts_ms":1780409064043,"delta_ms":468.48,"seq":9,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409060513-9","stage":"tts.dial","system":"tts","ts_ms":1780409063774,"delta_ms":200.107,"seq":9,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409060513-9","stage":"tts.first_byte","system":"tts","ts_ms":1780409064043,"delta_ms":468.435,"seq":9,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409060513-9","stage":"tts.final","system":"tts","ts_ms":1780409064094,"delta_ms":468.48,"seq":9,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409064391-10","stage":"stt.speech_start","system":"stt","ts_ms":1780409064391}
+{"utt_id":"1780409064391-10","stage":"stt.final","system":"stt","ts_ms":1780409068466,"delta_ms":537,"text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409064391-10","stage":"llm.gemini_start","system":"llm","ts_ms":1780409068466,"kind":"answer","category":"uncategorized"}
+{"utt_id":"1780409064391-10","stage":"llm.emit","system":"llm","ts_ms":1780409069027,"delta_ms":4635,"kind":"llm","category":"uncategorized","text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409064391-10","stage":"llm.gemini","system":"llm","ts_ms":1780409069027,"delta_ms":560,"kind":"llm","category":"uncategorized","text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409064391-10","stage":"tts.arrival","system":"tts","ts_ms":1780409069027,"seq":10,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409064391-10","stage":"tts.played","system":"tts","ts_ms":1780409069469,"delta_ms":442.194,"seq":10,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409064391-10","stage":"tts.dial","system":"tts","ts_ms":1780409069216,"delta_ms":188.754,"seq":10,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409064391-10","stage":"tts.first_byte","system":"tts","ts_ms":1780409069469,"delta_ms":442.055,"seq":10,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409064391-10","stage":"tts.final","system":"tts","ts_ms":1780409069514,"delta_ms":442.194,"seq":10,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409069829-11","stage":"stt.speech_start","system":"stt","ts_ms":1780409069829}
+{"utt_id":"1780409069829-11","stage":"stt.final","system":"stt","ts_ms":1780409072462,"delta_ms":608,"text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409069829-11","stage":"llm.gemini_start","system":"llm","ts_ms":1780409072463,"kind":"answer","category":"uncategorized"}
+{"utt_id":"1780409069829-11","stage":"llm.emit","system":"llm","ts_ms":1780409072951,"delta_ms":3121,"kind":"llm","category":"uncategorized","text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409069829-11","stage":"llm.gemini","system":"llm","ts_ms":1780409072951,"delta_ms":487,"kind":"llm","category":"uncategorized","text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409069829-11","stage":"tts.arrival","system":"tts","ts_ms":1780409072951,"seq":11,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409069829-11","stage":"tts.played","system":"tts","ts_ms":1780409073421,"delta_ms":470.225,"seq":11,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409069829-11","stage":"tts.dial","system":"tts","ts_ms":1780409073151,"delta_ms":199.735,"seq":11,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409069829-11","stage":"tts.first_byte","system":"tts","ts_ms":1780409073421,"delta_ms":470.16,"seq":11,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409069829-11","stage":"tts.final","system":"tts","ts_ms":1780409073473,"delta_ms":470.225,"seq":11,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409073771-12","stage":"stt.speech_start","system":"stt","ts_ms":1780409073771}

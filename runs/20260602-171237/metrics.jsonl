@@ -1,0 +1,227 @@
+{"utt_id":"1780409429848-1","stage":"stt.speech_start","system":"stt","ts_ms":1780409429848}
+{"utt_id":"1780409431719-2","stage":"stt.speech_start","system":"stt","ts_ms":1780409431719}
+{"utt_id":"1780409431719-2","stage":"stt.final","system":"stt","ts_ms":1780409431719,"delta_ms":638,"text":"Merhaba iyi günler."}
+{"utt_id":"1780409431719-2","stage":"llm.gemini_start","system":"llm","ts_ms":1780409431720,"kind":"answer","category":"uncategorized"}
+{"utt_id":"1780409431719-2","stage":"llm.emit","system":"llm","ts_ms":1780409432383,"delta_ms":663,"kind":"llm","category":"uncategorized","text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409431719-2","stage":"llm.gemini","system":"llm","ts_ms":1780409432384,"delta_ms":663,"kind":"llm","category":"uncategorized","text":"Merhaba, size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409431719-2","stage":"tts.arrival","system":"tts","ts_ms":1780409432384,"seq":1,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409431719-2","stage":"llm.regex_hit","system":"llm","ts_ms":1780409433397,"delta_ms":1678,"category":"appointments","text":"randevu"}
+{"utt_id":"1780409431719-2","stage":"tts.played","system":"tts","ts_ms":1780409433398,"delta_ms":1010.499,"seq":1,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409431719-2","stage":"tts.dial","system":"tts","ts_ms":1780409432936,"delta_ms":547.946,"seq":1,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409431719-2","stage":"tts.first_byte","system":"tts","ts_ms":1780409433397,"delta_ms":1009.789,"seq":1,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409431719-2","stage":"tts.final","system":"tts","ts_ms":1780409433445,"delta_ms":1010.499,"seq":1,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409431719-2","stage":"llm.decision","system":"llm","ts_ms":1780409433547,"delta_ms":1828,"kind":"filler","category":"appointments"}
+{"utt_id":"1780409431719-2","stage":"llm.dropped","system":"llm","ts_ms":1780409433549,"delta_ms":1828,"kind":"filler","category":"appointments"}
+{"utt_id":"1780409431719-2","stage":"llm.regex_hit","system":"llm","ts_ms":1780409434531,"delta_ms":2812,"category":"appointments.booking","text":"randevusu almak"}
+{"utt_id":"1780409431719-2","stage":"llm.decision","system":"llm","ts_ms":1780409434531,"delta_ms":2812,"kind":"answer","category":"appointments.booking"}
+{"utt_id":"1780409431719-2","stage":"llm.dropped","system":"llm","ts_ms":1780409434531,"delta_ms":2812,"kind":"answer","category":"appointments.booking"}
+{"utt_id":"1780409431719-2","stage":"stt.final","system":"stt","ts_ms":1780409434994,"delta_ms":632,"text":"Bugün botoks randevusu almak istiyorum."}
+{"utt_id":"1780409431719-2","stage":"llm.gemini_start","system":"llm","ts_ms":1780409434995,"kind":"answer","category":"appointments"}
+{"utt_id":"1780409431719-2","stage":"llm.emit","system":"llm","ts_ms":1780409435560,"delta_ms":3840,"kind":"llm","category":"appointments","text":"Elbette, size yardımcı olabilirim."}
+{"utt_id":"1780409431719-2","stage":"llm.gemini","system":"llm","ts_ms":1780409435560,"delta_ms":564,"kind":"llm","category":"appointments","text":"Elbette, size yardımcı olabilirim."}
+{"utt_id":"1780409431719-2","stage":"tts.arrival","system":"tts","ts_ms":1780409435562,"seq":2,"kind":"llm","category":"appointments"}
+{"utt_id":"1780409431719-2","stage":"tts.played","system":"tts","ts_ms":1780409436007,"delta_ms":444.741,"seq":2,"kind":"llm","category":"appointments"}
+{"utt_id":"1780409431719-2","stage":"tts.dial","system":"tts","ts_ms":1780409435750,"delta_ms":188.553,"seq":2,"kind":"llm","category":"appointments"}
+{"utt_id":"1780409431719-2","stage":"tts.first_byte","system":"tts","ts_ms":1780409436006,"delta_ms":444.355,"seq":2,"kind":"llm","category":"appointments"}
+{"utt_id":"1780409431719-2","stage":"tts.final","system":"tts","ts_ms":1780409436028,"delta_ms":444.741,"seq":2,"kind":"llm","category":"appointments"}
+{"utt_id":"1780409441892-3","stage":"stt.speech_start","system":"stt","ts_ms":1780409441892}
+{"utt_id":"1780409441892-3","stage":"llm.regex_hit","system":"llm","ts_ms":1780409444075,"delta_ms":2183,"category":"appointments","text":"randevu"}
+{"utt_id":"1780409441892-3","stage":"llm.decision","system":"llm","ts_ms":1780409444226,"delta_ms":2334,"kind":"filler","category":"appointments"}
+{"utt_id":"1780409441892-3","stage":"llm.dropped","system":"llm","ts_ms":1780409444227,"delta_ms":2334,"kind":"filler","category":"appointments"}
+{"utt_id":"1780409441892-3","stage":"llm.regex_hit","system":"llm","ts_ms":1780409444678,"delta_ms":2786,"category":"appointments.booking","text":"randevusunu alabilir"}
+{"utt_id":"1780409441892-3","stage":"llm.decision","system":"llm","ts_ms":1780409444678,"delta_ms":2786,"kind":"answer","category":"appointments.booking"}
+{"utt_id":"1780409441892-3","stage":"llm.dropped","system":"llm","ts_ms":1780409444678,"delta_ms":2786,"kind":"answer","category":"appointments.booking"}
+{"utt_id":"1780409441892-3","stage":"stt.final","system":"stt","ts_ms":1780409445122,"delta_ms":510,"text":"Bugün için botoks randevusunu alabilir miyim?"}
+{"utt_id":"1780409441892-3","stage":"llm.gemini_start","system":"llm","ts_ms":1780409445122,"kind":"answer","category":"appointments"}
+{"utt_id":"1780409441892-3","stage":"llm.emit","system":"llm","ts_ms":1780409445721,"delta_ms":3828,"kind":"llm","category":"appointments","text":"Bugün için botoks randevusu dolu."}
+{"utt_id":"1780409441892-3","stage":"llm.gemini","system":"llm","ts_ms":1780409445721,"delta_ms":598,"kind":"llm","category":"appointments","text":"Bugün için botoks randevusu dolu."}
+{"utt_id":"1780409441892-3","stage":"tts.arrival","system":"tts","ts_ms":1780409445721,"seq":3,"kind":"llm","category":"appointments"}
+{"utt_id":"1780409441892-3","stage":"tts.played","system":"tts","ts_ms":1780409446169,"delta_ms":448.158,"seq":3,"kind":"llm","category":"appointments"}
+{"utt_id":"1780409441892-3","stage":"tts.dial","system":"tts","ts_ms":1780409445917,"delta_ms":196.276,"seq":3,"kind":"llm","category":"appointments"}
+{"utt_id":"1780409441892-3","stage":"tts.first_byte","system":"tts","ts_ms":1780409446169,"delta_ms":448.115,"seq":3,"kind":"llm","category":"appointments"}
+{"utt_id":"1780409441892-3","stage":"tts.final","system":"tts","ts_ms":1780409446202,"delta_ms":448.158,"seq":3,"kind":"llm","category":"appointments"}
+{"utt_id":"1780409450695-4","stage":"stt.speech_start","system":"stt","ts_ms":1780409450695}
+{"utt_id":"1780409452134-5","stage":"stt.speech_start","system":"stt","ts_ms":1780409452134}
+{"utt_id":"1780409452134-5","stage":"stt.final","system":"stt","ts_ms":1780409452488,"delta_ms":475,"text":"Peki yarınki"}
+{"utt_id":"1780409452134-5","stage":"llm.gemini_start","system":"llm","ts_ms":1780409452488,"kind":"answer","category":"uncategorized"}
+{"utt_id":"","stage":"llm.embedding_hit","system":"llm","ts_ms":1780409452498,"category":"appointments.booking","score":0.7578561902046204}
+{"utt_id":"1780409452134-5","stage":"llm.emit","system":"llm","ts_ms":1780409453105,"delta_ms":970,"kind":"llm","category":"uncategorized","text":"Yarınki randevunuzu teyit etmek için aradınız sanırım."}
+{"utt_id":"1780409452134-5","stage":"llm.gemini","system":"llm","ts_ms":1780409453105,"delta_ms":616,"kind":"llm","category":"uncategorized","text":"Yarınki randevunuzu teyit etmek için aradınız sanırım."}
+{"utt_id":"1780409452134-5","stage":"tts.arrival","system":"tts","ts_ms":1780409453105,"seq":4,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409452134-5","stage":"llm.regex_hit","system":"llm","ts_ms":1780409453133,"delta_ms":999,"category":"appointments","text":"randevu"}
+{"utt_id":"1780409452134-5","stage":"llm.decision","system":"llm","ts_ms":1780409453287,"delta_ms":1153,"kind":"filler","category":"appointments"}
+{"utt_id":"1780409452134-5","stage":"llm.dropped","system":"llm","ts_ms":1780409453287,"delta_ms":1153,"kind":"filler","category":"appointments"}
+{"utt_id":"1780409452134-5","stage":"tts.played","system":"tts","ts_ms":1780409453562,"delta_ms":456.902,"seq":4,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409452134-5","stage":"llm.regex_hit","system":"llm","ts_ms":1780409453682,"delta_ms":1548,"category":"appointments.cancel","text":"randevumu iptal"}
+{"utt_id":"1780409452134-5","stage":"llm.decision","system":"llm","ts_ms":1780409453682,"delta_ms":1548,"kind":"answer","category":"appointments.cancel"}
+{"utt_id":"1780409452134-5","stage":"llm.dropped","system":"llm","ts_ms":1780409453683,"delta_ms":1548,"kind":"answer","category":"appointments.cancel"}
+{"utt_id":"1780409452134-5","stage":"tts.dial","system":"tts","ts_ms":1780409453299,"delta_ms":194.157,"seq":4,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409452134-5","stage":"tts.first_byte","system":"tts","ts_ms":1780409453562,"delta_ms":456.817,"seq":4,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409452134-5","stage":"tts.final","system":"tts","ts_ms":1780409453623,"delta_ms":456.902,"seq":4,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409452134-5","stage":"stt.final","system":"stt","ts_ms":1780409455034,"delta_ms":461,"text":"randevumu iptal etmek istiyorsam ne yapabilirim?"}
+{"utt_id":"1780409452134-5","stage":"llm.gemini_start","system":"llm","ts_ms":1780409455034,"kind":"answer","category":"appointments"}
+{"utt_id":"1780409452134-5","stage":"llm.emit","system":"llm","ts_ms":1780409455540,"delta_ms":3405,"kind":"llm","category":"appointments","text":"Randevunuzu iptal etmek için lütfen kliniğimizi arayın."}
+{"utt_id":"1780409452134-5","stage":"llm.gemini","system":"llm","ts_ms":1780409455540,"delta_ms":505,"kind":"llm","category":"appointments","text":"Randevunuzu iptal etmek için lütfen kliniğimizi arayın."}
+{"utt_id":"1780409452134-5","stage":"tts.arrival","system":"tts","ts_ms":1780409455540,"seq":5,"kind":"llm","category":"appointments"}
+{"utt_id":"1780409452134-5","stage":"tts.played","system":"tts","ts_ms":1780409455985,"delta_ms":445.379,"seq":5,"kind":"llm","category":"appointments"}
+{"utt_id":"1780409452134-5","stage":"tts.dial","system":"tts","ts_ms":1780409455728,"delta_ms":187.905,"seq":5,"kind":"llm","category":"appointments"}
+{"utt_id":"1780409452134-5","stage":"tts.first_byte","system":"tts","ts_ms":1780409455985,"delta_ms":445.278,"seq":5,"kind":"llm","category":"appointments"}
+{"utt_id":"1780409452134-5","stage":"tts.final","system":"tts","ts_ms":1780409456053,"delta_ms":445.379,"seq":5,"kind":"llm","category":"appointments"}
+{"utt_id":"1780409461962-6","stage":"stt.speech_start","system":"stt","ts_ms":1780409461962}
+{"utt_id":"1780409461962-6","stage":"llm.regex_hit","system":"llm","ts_ms":1780409466153,"delta_ms":4191,"category":"logistics","text":"adresiniz"}
+{"utt_id":"1780409461962-6","stage":"llm.regex_hit","system":"llm","ts_ms":1780409466153,"delta_ms":4191,"category":"logistics.address","text":"adresiniz"}
+{"utt_id":"1780409461962-6","stage":"llm.decision","system":"llm","ts_ms":1780409466153,"delta_ms":4191,"kind":"answer","category":"logistics.address"}
+{"utt_id":"1780409461962-6","stage":"llm.emit","system":"llm","ts_ms":1780409466154,"delta_ms":4191,"kind":"answer","category":"logistics.address","text":"Kliniğimiz [adres] adresinde bulunuyor. İsterseniz size konum ve yol tarifi gönderebiliriz."}
+{"utt_id":"1780409461962-6","stage":"tts.arrival","system":"tts","ts_ms":1780409466154,"seq":6,"kind":"answer","category":"logistics.address"}
+{"utt_id":"1780409461962-6","stage":"llm.embedding_hit","system":"llm","ts_ms":1780409466166,"delta_ms":4204,"category":"logistics.address","score":0.8024688363075256}
+{"utt_id":"1780409461962-6","stage":"tts.played","system":"tts","ts_ms":1780409466615,"delta_ms":461.144,"seq":6,"kind":"answer","category":"logistics.address"}
+{"utt_id":"1780409461962-6","stage":"tts.dial","system":"tts","ts_ms":1780409466344,"delta_ms":190.751,"seq":6,"kind":"answer","category":"logistics.address"}
+{"utt_id":"1780409461962-6","stage":"tts.first_byte","system":"tts","ts_ms":1780409466615,"delta_ms":461.063,"seq":6,"kind":"answer","category":"logistics.address"}
+{"utt_id":"1780409461962-6","stage":"tts.final","system":"tts","ts_ms":1780409466718,"delta_ms":461.144,"seq":6,"kind":"answer","category":"logistics.address"}
+{"utt_id":"1780409461962-6","stage":"stt.final","system":"stt","ts_ms":1780409469613,"delta_ms":6020,"text":"Tam olarak adresiniz nerede?"}
+{"utt_id":"1780409461962-6","stage":"llm.gemini_start","system":"llm","ts_ms":1780409469614,"kind":"verify","category":"logistics.address"}
+{"utt_id":"","stage":"llm.embedding_hit","system":"llm","ts_ms":1780409469627,"category":"logistics.address","score":0.7182125449180603}
+{"utt_id":"1780409461962-6","stage":"llm.gemini","system":"llm","ts_ms":1780409470200,"delta_ms":586,"kind":"verify","category":"logistics.address","verdict":"enough"}
+{"utt_id":"1780409471831-7","stage":"stt.speech_start","system":"stt","ts_ms":1780409471831}
+{"utt_id":"1780409471831-7","stage":"llm.regex_hit","system":"llm","ts_ms":1780409473691,"delta_ms":1860,"category":"logistics","text":"saat+acik"}
+{"utt_id":"1780409471831-7","stage":"llm.regex_hit","system":"llm","ts_ms":1780409473691,"delta_ms":1860,"category":"logistics.hours","text":"saat+acik"}
+{"utt_id":"1780409471831-7","stage":"llm.decision","system":"llm","ts_ms":1780409473691,"delta_ms":1860,"kind":"answer","category":"logistics.hours"}
+{"utt_id":"1780409471831-7","stage":"llm.emit","system":"llm","ts_ms":1780409473691,"delta_ms":1860,"kind":"answer","category":"logistics.hours","text":"Kliniğimiz hafta içi 09:00 ile 18:00, cumartesi 09:00 ile 14:00 saatleri arasında hizmet vermektedir. Pazar günleri kapalıyız."}
+{"utt_id":"1780409471831-7","stage":"tts.arrival","system":"tts","ts_ms":1780409473691,"seq":7,"kind":"answer","category":"logistics.hours"}
+{"utt_id":"1780409471831-7","stage":"stt.final","system":"stt","ts_ms":1780409474116,"delta_ms":614,"text":"Hangi saatlerde açıksınız?"}
+{"utt_id":"1780409471831-7","stage":"llm.gemini_start","system":"llm","ts_ms":1780409474116,"kind":"verify","category":"logistics.hours"}
+{"utt_id":"1780409471831-7","stage":"tts.played","system":"tts","ts_ms":1780409474158,"delta_ms":467.421,"seq":7,"kind":"answer","category":"logistics.hours"}
+{"utt_id":"1780409471831-7","stage":"tts.dial","system":"tts","ts_ms":1780409473883,"delta_ms":192.302,"seq":7,"kind":"answer","category":"logistics.hours"}
+{"utt_id":"1780409471831-7","stage":"tts.first_byte","system":"tts","ts_ms":1780409474158,"delta_ms":467.397,"seq":7,"kind":"answer","category":"logistics.hours"}
+{"utt_id":"1780409471831-7","stage":"tts.final","system":"tts","ts_ms":1780409474315,"delta_ms":467.421,"seq":7,"kind":"answer","category":"logistics.hours"}
+{"utt_id":"1780409471831-7","stage":"llm.gemini","system":"llm","ts_ms":1780409474535,"delta_ms":418,"kind":"verify","category":"logistics.hours","verdict":"enough"}
+{"utt_id":"1780409482360-8","stage":"stt.speech_start","system":"stt","ts_ms":1780409482360}
+{"utt_id":"1780409482360-8","stage":"llm.regex_hit","system":"llm","ts_ms":1780409483590,"delta_ms":1230,"category":"pricing","text":"fiyat"}
+{"utt_id":"1780409482360-8","stage":"llm.embedding_hit","system":"llm","ts_ms":1780409483601,"delta_ms":1241,"category":"pricing","score":0.8344342708587646}
+{"utt_id":"1780409482360-8","stage":"llm.decision","system":"llm","ts_ms":1780409483742,"delta_ms":1382,"kind":"filler","category":"pricing"}
+{"utt_id":"1780409482360-8","stage":"llm.dropped","system":"llm","ts_ms":1780409483742,"delta_ms":1382,"kind":"filler","category":"pricing"}
+{"utt_id":"1780409482360-8","stage":"stt.final","system":"stt","ts_ms":1780409484401,"delta_ms":602,"text":"Peki fiyatlarınız nasıl?"}
+{"utt_id":"1780409482360-8","stage":"llm.gemini_start","system":"llm","ts_ms":1780409484401,"kind":"answer","category":"pricing"}
+{"utt_id":"1780409482360-8","stage":"llm.emit","system":"llm","ts_ms":1780409484990,"delta_ms":2629,"kind":"llm","category":"pricing","text":"Fiyatlarımız, sunduğumuz hizmetlere göre değişiklik göstermektedir."}
+{"utt_id":"1780409482360-8","stage":"llm.gemini","system":"llm","ts_ms":1780409484990,"delta_ms":588,"kind":"llm","category":"pricing","text":"Fiyatlarımız, sunduğumuz hizmetlere göre değişiklik göstermektedir."}
+{"utt_id":"1780409482360-8","stage":"tts.arrival","system":"tts","ts_ms":1780409484990,"seq":8,"kind":"llm","category":"pricing"}
+{"utt_id":"1780409482360-8","stage":"tts.played","system":"tts","ts_ms":1780409485450,"delta_ms":460.221,"seq":8,"kind":"llm","category":"pricing"}
+{"utt_id":"1780409482360-8","stage":"tts.dial","system":"tts","ts_ms":1780409485182,"delta_ms":192.094,"seq":8,"kind":"llm","category":"pricing"}
+{"utt_id":"1780409482360-8","stage":"tts.first_byte","system":"tts","ts_ms":1780409485450,"delta_ms":460.152,"seq":8,"kind":"llm","category":"pricing"}
+{"utt_id":"1780409482360-8","stage":"tts.final","system":"tts","ts_ms":1780409485529,"delta_ms":460.221,"seq":8,"kind":"llm","category":"pricing"}
+{"utt_id":"1780409499052-9","stage":"stt.speech_start","system":"stt","ts_ms":1780409499052}
+{"utt_id":"1780409499052-9","stage":"llm.embedding_hit","system":"llm","ts_ms":1780409500189,"delta_ms":1137,"category":"appointments.booking","score":0.7627218961715698}
+{"utt_id":"1780409499052-9","stage":"llm.regex_hit","system":"llm","ts_ms":1780409500606,"delta_ms":1554,"category":"appointments","text":"randevu"}
+{"utt_id":"1780409499052-9","stage":"llm.decision","system":"llm","ts_ms":1780409500756,"delta_ms":1704,"kind":"filler","category":"appointments"}
+{"utt_id":"1780409499052-9","stage":"llm.dropped","system":"llm","ts_ms":1780409500757,"delta_ms":1704,"kind":"filler","category":"appointments"}
+{"utt_id":"1780409499052-9","stage":"llm.regex_hit","system":"llm","ts_ms":1780409500975,"delta_ms":1923,"category":"appointments.booking","text":"randevu alabilir"}
+{"utt_id":"1780409499052-9","stage":"llm.decision","system":"llm","ts_ms":1780409500975,"delta_ms":1923,"kind":"answer","category":"appointments.booking"}
+{"utt_id":"1780409499052-9","stage":"llm.dropped","system":"llm","ts_ms":1780409500975,"delta_ms":1923,"kind":"answer","category":"appointments.booking"}
+{"utt_id":"1780409499052-9","stage":"stt.final","system":"stt","ts_ms":1780409501482,"delta_ms":591,"text":"Çarşamba günü randevu alabilir miyiz?"}
+{"utt_id":"1780409499052-9","stage":"llm.gemini_start","system":"llm","ts_ms":1780409501482,"kind":"answer","category":"appointments"}
+{"utt_id":"","stage":"llm.embedding_hit","system":"llm","ts_ms":1780409501497,"category":"appointments.booking","score":0.7309007048606873}
+{"utt_id":"1780409499052-9","stage":"llm.emit","system":"llm","ts_ms":1780409502031,"delta_ms":2979,"kind":"llm","category":"appointments","text":"Evet, çarşamba günü randevu alabilirsiniz."}
+{"utt_id":"1780409499052-9","stage":"llm.gemini","system":"llm","ts_ms":1780409502031,"delta_ms":549,"kind":"llm","category":"appointments","text":"Evet, çarşamba günü randevu alabilirsiniz."}
+{"utt_id":"1780409499052-9","stage":"tts.arrival","system":"tts","ts_ms":1780409502032,"seq":9,"kind":"llm","category":"appointments"}
+{"utt_id":"1780409499052-9","stage":"tts.played","system":"tts","ts_ms":1780409502511,"delta_ms":479.301,"seq":9,"kind":"llm","category":"appointments"}
+{"utt_id":"1780409499052-9","stage":"tts.dial","system":"tts","ts_ms":1780409502236,"delta_ms":204.47,"seq":9,"kind":"llm","category":"appointments"}
+{"utt_id":"1780409499052-9","stage":"tts.first_byte","system":"tts","ts_ms":1780409502511,"delta_ms":479.262,"seq":9,"kind":"llm","category":"appointments"}
+{"utt_id":"1780409499052-9","stage":"tts.final","system":"tts","ts_ms":1780409502570,"delta_ms":479.301,"seq":9,"kind":"llm","category":"appointments"}
+{"utt_id":"1780409505430-10","stage":"stt.speech_start","system":"stt","ts_ms":1780409505430}
+{"utt_id":"1780409506431-11","stage":"stt.speech_start","system":"stt","ts_ms":1780409506431}
+{"utt_id":"1780409506431-11","stage":"stt.final","system":"stt","ts_ms":1780409506607,"delta_ms":625,"text":"hı hı"}
+{"utt_id":"1780409506431-11","stage":"llm.gemini_start","system":"llm","ts_ms":1780409506609,"kind":"answer","category":"uncategorized"}
+{"utt_id":"1780409506431-11","stage":"llm.emit","system":"llm","ts_ms":1780409507123,"delta_ms":691,"kind":"llm","category":"uncategorized","text":"Size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409506431-11","stage":"llm.gemini","system":"llm","ts_ms":1780409507123,"delta_ms":513,"kind":"llm","category":"uncategorized","text":"Size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409506431-11","stage":"tts.arrival","system":"tts","ts_ms":1780409507123,"seq":10,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409506431-11","stage":"tts.played","system":"tts","ts_ms":1780409507604,"delta_ms":481.185,"seq":10,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409506431-11","stage":"tts.dial","system":"tts","ts_ms":1780409507324,"delta_ms":200.551,"seq":10,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409506431-11","stage":"tts.first_byte","system":"tts","ts_ms":1780409507604,"delta_ms":481.143,"seq":10,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409506431-11","stage":"tts.final","system":"tts","ts_ms":1780409507629,"delta_ms":481.185,"seq":10,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409506431-11","stage":"llm.regex_hit","system":"llm","ts_ms":1780409509174,"delta_ms":2743,"category":"pricing","text":"ne kadar"}
+{"utt_id":"1780409506431-11","stage":"llm.regex_hit","system":"llm","ts_ms":1780409509174,"delta_ms":2743,"category":"pricing.botoks","text":"botoks ne kadar"}
+{"utt_id":"1780409506431-11","stage":"llm.decision","system":"llm","ts_ms":1780409509175,"delta_ms":2744,"kind":"answer","category":"pricing.botoks"}
+{"utt_id":"1780409506431-11","stage":"llm.dropped","system":"llm","ts_ms":1780409509175,"delta_ms":2744,"kind":"answer","category":"pricing.botoks"}
+{"utt_id":"1780409506431-11","stage":"stt.final","system":"stt","ts_ms":1780409509601,"delta_ms":580,"text":"Tamam peki olur botoks ne kadar?"}
+{"utt_id":"1780409506431-11","stage":"llm.gemini_start","system":"llm","ts_ms":1780409509601,"kind":"answer","category":"pricing.botoks"}
+{"utt_id":"","stage":"llm.embedding_hit","system":"llm","ts_ms":1780409509617,"category":"pricing.botoks","score":0.8297383785247803}
+{"utt_id":"1780409506431-11","stage":"llm.gemini","system":"llm","ts_ms":1780409510295,"delta_ms":692,"kind":"llm","category":"pricing.botoks","err":"gemini: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."}
+{"utt_id":"1780409515741-12","stage":"stt.speech_start","system":"stt","ts_ms":1780409515741}
+{"utt_id":"1780409515741-12","stage":"llm.embedding_hit","system":"llm","ts_ms":1780409516898,"delta_ms":1157,"category":"pricing.botoks","score":0.9283826351165771}
+{"utt_id":"1780409515741-12","stage":"llm.regex_hit","system":"llm","ts_ms":1780409516932,"delta_ms":1191,"category":"pricing","text":"ne kadar"}
+{"utt_id":"1780409515741-12","stage":"llm.regex_hit","system":"llm","ts_ms":1780409516932,"delta_ms":1191,"category":"pricing.botoks","text":"botoks ne kadar"}
+{"utt_id":"1780409515741-12","stage":"llm.decision","system":"llm","ts_ms":1780409516932,"delta_ms":1191,"kind":"answer","category":"pricing.botoks"}
+{"utt_id":"1780409515741-12","stage":"llm.dropped","system":"llm","ts_ms":1780409516932,"delta_ms":1191,"kind":"answer","category":"pricing.botoks"}
+{"utt_id":"1780409515741-12","stage":"llm.embedding_hit","system":"llm","ts_ms":1780409516951,"delta_ms":1210,"category":"pricing.botoks","score":1}
+{"utt_id":"1780409515741-12","stage":"llm.embedding_hit","system":"llm","ts_ms":1780409516952,"delta_ms":1211,"category":"pricing.botoks","score":1,"committed":true}
+{"utt_id":"1780409515741-12","stage":"stt.final","system":"stt","ts_ms":1780409517365,"delta_ms":634,"text":"botoks ne kadar?"}
+{"utt_id":"1780409515741-12","stage":"llm.gemini_start","system":"llm","ts_ms":1780409517365,"kind":"answer","category":"pricing.botoks"}
+{"utt_id":"","stage":"llm.embedding_hit","system":"llm","ts_ms":1780409517376,"category":"pricing.botoks","score":0.9291995763778687}
+{"utt_id":"1780409515741-12","stage":"llm.emit","system":"llm","ts_ms":1780409518069,"delta_ms":2327,"kind":"llm","category":"pricing.botoks","text":"Botoks fiyatları uygulanan bölgeye ve kliniğe göre değişiklik göstermektedir."}
+{"utt_id":"1780409515741-12","stage":"llm.gemini","system":"llm","ts_ms":1780409518069,"delta_ms":703,"kind":"llm","category":"pricing.botoks","text":"Botoks fiyatları uygulanan bölgeye ve kliniğe göre değişiklik göstermektedir."}
+{"utt_id":"1780409515741-12","stage":"tts.arrival","system":"tts","ts_ms":1780409518069,"seq":11,"kind":"llm","category":"pricing.botoks"}
+{"utt_id":"1780409515741-12","stage":"tts.played","system":"tts","ts_ms":1780409518524,"delta_ms":455.256,"seq":11,"kind":"llm","category":"pricing.botoks"}
+{"utt_id":"1780409515741-12","stage":"tts.dial","system":"tts","ts_ms":1780409518256,"delta_ms":187.507,"seq":11,"kind":"llm","category":"pricing.botoks"}
+{"utt_id":"1780409515741-12","stage":"tts.first_byte","system":"tts","ts_ms":1780409518524,"delta_ms":455.222,"seq":11,"kind":"llm","category":"pricing.botoks"}
+{"utt_id":"1780409515741-12","stage":"tts.final","system":"tts","ts_ms":1780409518614,"delta_ms":455.256,"seq":11,"kind":"llm","category":"pricing.botoks"}
+{"utt_id":"1780409523960-13","stage":"stt.speech_start","system":"stt","ts_ms":1780409523960}
+{"utt_id":"1780409524732-14","stage":"stt.speech_start","system":"stt","ts_ms":1780409524732}
+{"utt_id":"1780409524732-14","stage":"stt.final","system":"stt","ts_ms":1780409524986,"delta_ms":544,"text":"Tamam"}
+{"utt_id":"1780409524732-14","stage":"llm.gemini_start","system":"llm","ts_ms":1780409524986,"kind":"answer","category":"uncategorized"}
+{"utt_id":"1780409525430-15","stage":"stt.speech_start","system":"stt","ts_ms":1780409525430}
+{"utt_id":"1780409525430-15","stage":"llm.embedding_hit","system":"llm","ts_ms":1780409525500,"delta_ms":70,"category":"pricing.prp","score":0.7718422412872314}
+{"utt_id":"1780409524732-14","stage":"llm.emit","system":"llm","ts_ms":1780409525664,"delta_ms":931,"kind":"llm","category":"uncategorized","text":"Elbette, hazırım. Lütfen sorunuzu sorun."}
+{"utt_id":"1780409524732-14","stage":"llm.gemini","system":"llm","ts_ms":1780409525664,"delta_ms":677,"kind":"llm","category":"uncategorized","text":"Elbette, hazırım. Lütfen sorunuzu sorun."}
+{"utt_id":"1780409524732-14","stage":"tts.arrival","system":"tts","ts_ms":1780409525666,"seq":12,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409525430-15","stage":"stt.final","system":"stt","ts_ms":1780409525872,"delta_ms":466,"text":"peki"}
+{"utt_id":"1780409525430-15","stage":"llm.gemini_start","system":"llm","ts_ms":1780409525875,"kind":"answer","category":"uncategorized"}
+{"utt_id":"","stage":"llm.embedding_hit","system":"llm","ts_ms":1780409525891,"category":"logistics.payment","score":0.7571526765823364}
+{"utt_id":"1780409524732-14","stage":"tts.played","system":"tts","ts_ms":1780409526105,"delta_ms":438.809,"seq":12,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409524732-14","stage":"tts.dial","system":"tts","ts_ms":1780409525855,"delta_ms":188.258,"seq":12,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409524732-14","stage":"tts.first_byte","system":"tts","ts_ms":1780409526105,"delta_ms":438.774,"seq":12,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409524732-14","stage":"tts.final","system":"tts","ts_ms":1780409526162,"delta_ms":438.809,"seq":12,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409525430-15","stage":"llm.emit","system":"llm","ts_ms":1780409526339,"delta_ms":909,"kind":"llm","category":"uncategorized","text":"Elbette, nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409525430-15","stage":"llm.gemini","system":"llm","ts_ms":1780409526339,"delta_ms":464,"kind":"llm","category":"uncategorized","text":"Elbette, nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409525430-15","stage":"tts.arrival","system":"tts","ts_ms":1780409526339,"seq":13,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409525430-15","stage":"llm.regex_hit","system":"llm","ts_ms":1780409526493,"delta_ms":1063,"category":"appointments","text":"randevu"}
+{"utt_id":"1780409525430-15","stage":"llm.decision","system":"llm","ts_ms":1780409526644,"delta_ms":1214,"kind":"filler","category":"appointments"}
+{"utt_id":"1780409525430-15","stage":"llm.dropped","system":"llm","ts_ms":1780409526644,"delta_ms":1214,"kind":"filler","category":"appointments"}
+{"utt_id":"1780409525430-15","stage":"tts.played","system":"tts","ts_ms":1780409526786,"delta_ms":446.045,"seq":13,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409525430-15","stage":"tts.dial","system":"tts","ts_ms":1780409526530,"delta_ms":190.568,"seq":13,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409525430-15","stage":"tts.first_byte","system":"tts","ts_ms":1780409526785,"delta_ms":445.995,"seq":13,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409525430-15","stage":"tts.final","system":"tts","ts_ms":1780409526806,"delta_ms":446.045,"seq":13,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409525430-15","stage":"llm.embedding_hit","system":"llm","ts_ms":1780409526875,"delta_ms":1445,"category":"appointments","score":0.9386208653450012}
+{"utt_id":"1780409525430-15","stage":"llm.regex_hit","system":"llm","ts_ms":1780409526911,"delta_ms":1481,"category":"appointments.booking","text":"randevu alalim"}
+{"utt_id":"1780409525430-15","stage":"llm.decision","system":"llm","ts_ms":1780409526911,"delta_ms":1481,"kind":"answer","category":"appointments.booking"}
+{"utt_id":"1780409525430-15","stage":"llm.dropped","system":"llm","ts_ms":1780409526911,"delta_ms":1481,"kind":"answer","category":"appointments.booking"}
+{"utt_id":"1780409525430-15","stage":"llm.embedding_hit","system":"llm","ts_ms":1780409526920,"delta_ms":1490,"category":"appointments","score":0.7866886854171753}
+{"utt_id":"1780409525430-15","stage":"llm.embedding_hit","system":"llm","ts_ms":1780409527066,"delta_ms":1636,"category":"appointments","score":0.7570156455039978}
+{"utt_id":"1780409525430-15","stage":"stt.final","system":"stt","ts_ms":1780409527402,"delta_ms":690,"text":"randevu alalım o zaman."}
+{"utt_id":"1780409525430-15","stage":"llm.gemini_start","system":"llm","ts_ms":1780409527402,"kind":"answer","category":"appointments"}
+{"utt_id":"1780409525430-15","stage":"llm.emit","system":"llm","ts_ms":1780409528107,"delta_ms":2676,"kind":"llm","category":"appointments","text":"Elbette, randevu için sizi ilgili birime yönlendiriyorum."}
+{"utt_id":"1780409525430-15","stage":"llm.gemini","system":"llm","ts_ms":1780409528107,"delta_ms":704,"kind":"llm","category":"appointments","text":"Elbette, randevu için sizi ilgili birime yönlendiriyorum."}
+{"utt_id":"1780409525430-15","stage":"tts.arrival","system":"tts","ts_ms":1780409528107,"seq":14,"kind":"llm","category":"appointments"}
+{"utt_id":"1780409525430-15","stage":"tts.played","system":"tts","ts_ms":1780409528559,"delta_ms":452.27,"seq":14,"kind":"llm","category":"appointments"}
+{"utt_id":"1780409525430-15","stage":"tts.dial","system":"tts","ts_ms":1780409528298,"delta_ms":191.075,"seq":14,"kind":"llm","category":"appointments"}
+{"utt_id":"1780409525430-15","stage":"tts.first_byte","system":"tts","ts_ms":1780409528559,"delta_ms":452.131,"seq":14,"kind":"llm","category":"appointments"}
+{"utt_id":"1780409525430-15","stage":"tts.final","system":"tts","ts_ms":1780409528628,"delta_ms":452.27,"seq":14,"kind":"llm","category":"appointments"}
+{"utt_id":"1780409543421-16","stage":"stt.speech_start","system":"stt","ts_ms":1780409543421}
+{"utt_id":"1780409543421-16","stage":"stt.final","system":"stt","ts_ms":1780409545026,"delta_ms":486,"text":"Bugün nasılsınız?"}
+{"utt_id":"1780409543421-16","stage":"llm.gemini_start","system":"llm","ts_ms":1780409545026,"kind":"answer","category":"uncategorized"}
+{"utt_id":"1780409543421-16","stage":"llm.emit","system":"llm","ts_ms":1780409545561,"delta_ms":2139,"kind":"llm","category":"uncategorized","text":"Bugün size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409543421-16","stage":"llm.gemini","system":"llm","ts_ms":1780409545561,"delta_ms":534,"kind":"llm","category":"uncategorized","text":"Bugün size nasıl yardımcı olabilirim?"}
+{"utt_id":"1780409543421-16","stage":"tts.arrival","system":"tts","ts_ms":1780409545561,"seq":15,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409543421-16","stage":"tts.played","system":"tts","ts_ms":1780409546052,"delta_ms":490.867,"seq":15,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409543421-16","stage":"tts.dial","system":"tts","ts_ms":1780409545771,"delta_ms":209.592,"seq":15,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409543421-16","stage":"tts.first_byte","system":"tts","ts_ms":1780409546052,"delta_ms":490.794,"seq":15,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409543421-16","stage":"tts.final","system":"tts","ts_ms":1780409546095,"delta_ms":490.867,"seq":15,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409548791-17","stage":"stt.speech_start","system":"stt","ts_ms":1780409548791}
+{"utt_id":"1780409548791-17","stage":"stt.final","system":"stt","ts_ms":1780409550519,"delta_ms":567,"text":"Siz nasılsınız?"}
+{"utt_id":"1780409548791-17","stage":"llm.gemini_start","system":"llm","ts_ms":1780409550519,"kind":"answer","category":"uncategorized"}
+{"utt_id":"1780409548791-17","stage":"llm.emit","system":"llm","ts_ms":1780409551046,"delta_ms":2254,"kind":"llm","category":"uncategorized","text":"Ben bir yapay zeka olduğum için iyiyim, teşekkür ederim."}
+{"utt_id":"1780409548791-17","stage":"llm.gemini","system":"llm","ts_ms":1780409551046,"delta_ms":526,"kind":"llm","category":"uncategorized","text":"Ben bir yapay zeka olduğum için iyiyim, teşekkür ederim."}
+{"utt_id":"1780409548791-17","stage":"tts.arrival","system":"tts","ts_ms":1780409551046,"seq":16,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409548791-17","stage":"tts.played","system":"tts","ts_ms":1780409551490,"delta_ms":444.064,"seq":16,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409548791-17","stage":"tts.dial","system":"tts","ts_ms":1780409551233,"delta_ms":186.702,"seq":16,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409548791-17","stage":"tts.first_byte","system":"tts","ts_ms":1780409551490,"delta_ms":444.013,"seq":16,"kind":"llm","category":"uncategorized"}
+{"utt_id":"1780409548791-17","stage":"tts.final","system":"tts","ts_ms":1780409551552,"delta_ms":444.064,"seq":16,"kind":"llm","category":"uncategorized"}

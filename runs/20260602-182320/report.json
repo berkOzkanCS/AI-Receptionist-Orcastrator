@@ -1,0 +1,79 @@
+{
+  "session": {
+    "started_ms": 1780413739329,
+    "ended_ms": 1780413800302,
+    "duration_ms": 60973,
+    "mode": "live",
+    "exit": "graceful"
+  },
+  "stages": {
+    "categorize": {
+      "count": 2,
+      "min": 1923,
+      "avg": 2117.5,
+      "p50": 2117.5,
+      "p95": 2292.55,
+      "max": 2312
+    },
+    "end_to_end": {
+      "count": 2,
+      "min": 3907,
+      "avg": 4460.5,
+      "p50": 4460.5,
+      "p95": 4958.650000000001,
+      "max": 5014
+    },
+    "llm_decision": {
+      "count": 1,
+      "min": 1924,
+      "avg": 1924,
+      "p50": 1924,
+      "p95": 1924,
+      "max": 1924
+    },
+    "llm_gemini": {
+      "count": 2,
+      "min": 684,
+      "avg": 1084,
+      "p50": 1084,
+      "p95": 1444,
+      "max": 1484
+    },
+    "stt_final": {
+      "count": 2,
+      "min": 2616,
+      "avg": 2756.5,
+      "p50": 2756.5,
+      "p95": 2882.9500000000003,
+      "max": 2897
+    },
+    "tts_first_byte": {
+      "count": 1,
+      "min": 603.5,
+      "avg": 603.5,
+      "p50": 603.5,
+      "p95": 603.5,
+      "max": 603.5
+    },
+    "tts_played": {
+      "count": 2,
+      "min": 606,
+      "avg": 619,
+      "p50": 619,
+      "p95": 630.7,
+      "max": 632
+    }
+  },
+  "counts": {
+    "total": 3,
+    "completed": 2,
+    "no_speak": 1,
+    "errored": 0
+  },
+  "paths": {
+    "filler": 0,
+    "catalog": 0,
+    "llm": 2,
+    "gemini": 2
+  }
+}

@@ -1,0 +1,22 @@
+==================== session report ====================
+mode:     live
+duration: 150.5s
+exit:     graceful
+
+stage          count    min    avg    p50    p95    max
+Transcribe         9   1292   2162   2227   2965   3300
+Categorize         5    868   1531   1471   2306   2429
+Decide             3   1633   2018   1837   2509   2584
+LLM (Gemini)       9    543    637    586    878   1027
+TTS 1st byte       9    495    577    550    702    735
+TTS played         9    495    578    550    705    735
+END-TO-END         9   2348   3271   3080   4490   4989
+
+utterances: 20 total — 9 completed, 11 no-speak, 0 errored
+
+response paths (counts overlap — an utterance may use several):
+  filler played:        0
+  catalog answer:       1   (predetermined line)
+  llm-generated reply:  8
+  gemini called:        10   (verify or answer)
+========================================================

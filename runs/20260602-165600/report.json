@@ -1,0 +1,67 @@
+{
+  "session": {
+    "started_ms": 1780408547794,
+    "ended_ms": 1780408560105,
+    "duration_ms": 12311,
+    "mode": "live",
+    "exit": "fail_fast",
+    "failed_child": "stt",
+    "fail_cause": "child stt exited: exit status 1\nlast stderr:\n2026/06/02 16:55:48 starting embedding sidecar (this may take a few seconds on first run while the model loads)...\nsidecar load failed: Trying to load a model of incompatible/unknown type. '/var/folders/k9/swjsfqx57mbgjqxj373fklrr0000gn/T/tfhub_modules/26c892ffbc8d7b032f5a95f316e2841ed4f1608c' contains neither 'saved_model.pb' nor 'saved_model.pbtxt'.\nTraceback (most recent call last):\n  File \"/Users/aa/Documents/Projects/STT-system/internal/category/embedding/embedder_server.py\", line 61, in main\n    model = hub.load(MODEL_URL)\n            ^^^^^^^^^^^^^^^^^^^\n  File \"/Users/aa/Documents/Projects/STT-system/internal/category/embedding/.venv/lib/python3.11/site-packages/tensorflow_hub/module_v2.py\", line 113, in load\n    raise ValueError(\"Trying to load a model of incompatible/unknown type. \"\nValueError: Trying to load a model of incompatible/unknown type. '/var/folders/k9/swjsfqx57mbgjqxj373fklrr0000gn/T/tfhub_modules/26c892ffbc8d7b032f5a95f316e2841ed4f1608c' contains neither 'saved_model.pb' nor 'saved_model.pbtxt'.\n2026/06/02 16:56:00 embedding sidecar: sidecar not ready: Trying to load a model of incompatible/unknown type. '/var/folders/k9/swjsfqx57mbgjqxj373fklrr0000gn/T/tfhub_modules/26c892ffbc8d7b032f5a95f316e2841ed4f1608c' contains neither 'saved_model.pb' nor 'saved_model.pbtxt'.\nexit status 1\n"
+  },
+  "stages": {
+    "end_to_end": {
+      "count": 0,
+      "min": 0,
+      "avg": 0,
+      "p50": 0,
+      "p95": 0,
+      "max": 0
+    },
+    "llm_decision": {
+      "count": 0,
+      "min": 0,
+      "avg": 0,
+      "p50": 0,
+      "p95": 0,
+      "max": 0
+    },
+    "llm_gemini": {
+      "count": 0,
+      "min": 0,
+      "avg": 0,
+      "p50": 0,
+      "p95": 0,
+      "max": 0
+    },
+    "stt_final": {
+      "count": 0,
+      "min": 0,
+      "avg": 0,
+      "p50": 0,
+      "p95": 0,
+      "max": 0
+    },
+    "tts_first_byte": {
+      "count": 0,
+      "min": 0,
+      "avg": 0,
+      "p50": 0,
+      "p95": 0,
+      "max": 0
+    },
+    "tts_played": {
+      "count": 0,
+      "min": 0,
+      "avg": 0,
+      "p50": 0,
+      "p95": 0,
+      "max": 0
+    }
+  },
+  "counts": {
+    "total": 0,
+    "completed": 0,
+    "no_speak": 0,
+    "errored": 0
+  }
+}

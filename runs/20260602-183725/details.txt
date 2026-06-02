@@ -1,0 +1,14 @@
+==================== per-utterance step durations ====================
+2 utterances — each line is how long THAT step took
+
+utterance 1780414629834-1 · appointments · llm
+  step                     took   what it measures
+  Transcription          478 ms   finished speaking → text ready
+  Categorization        2074 ms   started speaking → intent known
+  LLM (Gemini) call      692 ms   the LLM request
+  TTS playback           720 ms   text sent → you hear it
+  End-to-end (total)    4291 ms   you start speaking → you hear it
+
+utterance 1780414629834-1 · appointments · no-speak
+  step                     took   what it measures
+  TTS synthesis          720 ms   text sent → first audio byte

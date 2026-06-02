@@ -104,6 +104,77 @@ func TestJoinErrorFinalizes(t *testing.T) {
 	}
 }
 
+// Each phase reports how long that step took (a duration), and the categorize
+// metric + response path are derived correctly.
+func TestPhasesPathAndCategorize(t *testing.T) {
+	var got *Utterance
+	j := NewJoiner(func(u *Utterance) { got = u }, 8*time.Second)
+
+	const id wire.UttID = "s-1"
+	j.Add(ev(id, sharedmetrics.StageSpeechStart, 1000, 0))
+	j.Add(sharedmetrics.MetricEvent{UttID: id, Stage: sharedmetrics.StageLLMRegexHit, TsMs: 1180, DeltaMs: 180, Category: "logistics.hours"})
+	j.Add(ev(id, sharedmetrics.StageSTTFinal, 1400, 380)) // STT latency 380ms
+	j.Add(sharedmetrics.MetricEvent{UttID: id, Stage: sharedmetrics.StageLLMDecision, TsMs: 1410, DeltaMs: 410, Kind: "answer"})
+	j.Add(sharedmetrics.MetricEvent{UttID: id, Stage: sharedmetrics.StageLLMEmit, TsMs: 1450, Kind: "answer"})
+	j.Add(ev(id, sharedmetrics.StageTTSArrival, 1460, 0))
+	j.Add(ev(id, sharedmetrics.StageTTSFirstByte, 1700, 240)) // synth 240ms
+	j.Add(ev(id, sharedmetrics.StageTTSPlayed, 1800, 340))    // terminal; play total 340ms
+
+	if got == nil {
+		t.Fatal("utterance did not finalize")
+	}
+
+	phases := map[string]float64{}
+	for _, p := range got.Phases() {
+		if p.OK {
+			phases[p.Name] = p.TookMs
+		}
+	}
+	if phases["Transcription"] != 380 {
+		t.Errorf("Transcription took %.0f, want 380", phases["Transcription"])
+	}
+	if phases["Categorization"] != 180 {
+		t.Errorf("Categorization took %.0f, want 180", phases["Categorization"])
+	}
+	if phases["TTS synthesis"] != 240 {
+		t.Errorf("TTS synthesis took %.0f, want 240", phases["TTS synthesis"])
+	}
+	if phases["TTS playback"] != 100 { // 340 (played) - 240 (first byte)
+		t.Errorf("TTS playback took %.0f, want 100", phases["TTS playback"])
+	}
+
+	if v, ok := got.Metric(MCategorize); !ok || v != 180 {
+		t.Errorf("categorize = %.0f (ok=%v), want 180", v, ok)
+	}
+	if got.Path() != "catalog" {
+		t.Errorf("path = %q, want catalog", got.Path())
+	}
+	if !got.UsedCatalog() || got.UsedLLM() || got.GeminiCalled() {
+		t.Errorf("flags: catalog=%v llm=%v gemini=%v", got.UsedCatalog(), got.UsedLLM(), got.GeminiCalled())
+	}
+}
+
+// A filler then a Gemini-generated reply classifies as filler->llm.
+func TestPathFillerThenLLM(t *testing.T) {
+	var got *Utterance
+	j := NewJoiner(func(u *Utterance) { got = u }, 8*time.Second)
+	const id wire.UttID = "s-2"
+	j.Add(sharedmetrics.MetricEvent{UttID: id, Stage: sharedmetrics.StageLLMEmit, TsMs: 1100, Kind: "filler"})
+	j.Add(sharedmetrics.MetricEvent{UttID: id, Stage: sharedmetrics.StageLLMGeminiStart, TsMs: 1200})
+	j.Add(sharedmetrics.MetricEvent{UttID: id, Stage: sharedmetrics.StageLLMGemini, TsMs: 1700, DeltaMs: 500, Kind: "llm"})
+	j.Add(sharedmetrics.MetricEvent{UttID: id, Stage: sharedmetrics.StageLLMEmit, TsMs: 1750, Kind: "llm"})
+	j.Add(ev(id, sharedmetrics.StageTTSPlayed, 2000, 0))
+	if got == nil {
+		t.Fatal("not finalized")
+	}
+	if got.Path() != "filler→llm" {
+		t.Errorf("path = %q, want filler→llm", got.Path())
+	}
+	if !got.GeminiCalled() {
+		t.Error("gemini should be marked called")
+	}
+}
+
 // Events without a utt_id are ignored (a legacy/standalone producer).
 func TestJoinIgnoresEmptyID(t *testing.T) {
 	fired := false
