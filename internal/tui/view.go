@@ -128,6 +128,7 @@ func (m model) renderLastUtterance() string {
 	if u.Category != "" {
 		hdr += " · " + u.Category
 	}
+	hdr += " · cat:" + u.CatSource()
 	title := styleTitle.Render(hdr) + "  " + pathStyle(u.Path()).Render(u.Path())
 	colhdr := styleHeader.Render(fmt.Sprintf("%-18s %8s   %s", "step", "took", "what it measures"))
 

@@ -1,0 +1,300 @@
+{"utt_id":"1780505489027-2","cat_source":"miss","path":"no-speak","steps_ms":{"Transcription":601},"no_speak":true}
+{"utt_id":"1780505493941-3","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1336,"Transcription":630},"no_speak":true}
+{"utt_id":"1780505508973-4","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1429},"no_speak":true}
+{"utt_id":"1780505509932-5","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":524,"Transcription":577},"no_speak":true}
+{"utt_id":"1780505523488-6","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1582},"no_speak":true}
+{"utt_id":"1780505529984-2","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":820,"LLM output end":818,"LLM output start":817,"LLM → first audio":1767,"STT first out":1428,"TTS playback":1765.755,"Transcription":671},"end_to_end_ms":3405}
+{"utt_id":"1780505531280-3","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":648,"LLM output end":622,"LLM output start":621,"LLM → first audio":1433,"TTS playback":1433.006,"Transcription":659},"end_to_end_ms":2704}
+{"utt_id":"1780505534406-5","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":837,"LLM output end":432,"LLM output start":425,"LLM → first audio":455,"TTS playback":455.176,"Transcription":686},"end_to_end_ms":1725}
+{"utt_id":"1780505527151-7","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":583,"Transcription":590},"no_speak":true}
+{"utt_id":"1780505528328-1","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1331},"no_speak":true}
+{"utt_id":"1780505528330-8","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1255,"Transcription":581},"no_speak":true}
+{"utt_id":"1780505534406-5","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"LLM output end":666,"LLM output start":666,"LLM → first audio":621,"TTS playback":165.36600000000004,"TTS synthesis":455.123,"Transcription":677},"end_to_end_ms":1288}
+{"utt_id":"1780505529988-9","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1435,"Transcription":482},"no_speak":true}
+{"utt_id":"1780505531274-10","cat_source":"miss","path":"no-speak","steps_ms":{"Transcription":579},"no_speak":true}
+{"utt_id":"1780505531280-3","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":1432.934},"no_speak":true}
+{"utt_id":"1780505529984-2","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":1765.64},"no_speak":true}
+{"utt_id":"1780505533467-4","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1255},"no_speak":true}
+{"utt_id":"1780505533473-11","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1206},"no_speak":true}
+{"utt_id":"1780505542404-6","category":"pricing.prp","cat_source":"miss","path":"llm","steps_ms":{"Categorize embed":1200,"Decide":1561,"LLM output end":483,"LLM output start":480,"LLM → first audio":492,"STT first out":1179,"TTS playback":492.269,"Transcription":760},"end_to_end_ms":2537}
+{"utt_id":"1780505534370-12","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1955,"Transcription":554},"no_speak":true}
+{"utt_id":"1780505534406-5","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":620.37},"no_speak":true}
+{"utt_id":"1780505542368-13","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1232,"Transcription":720},"no_speak":true}
+{"utt_id":"1780505542404-6","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":492.051},"no_speak":true}
+{"utt_id":"1780505565247-8","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":979,"LLM output end":451,"LLM output start":451,"LLM → first audio":509,"STT first out":1658,"TTS playback":507.765,"Transcription":519},"end_to_end_ms":1940}
+{"utt_id":"1780505568290-9","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Categorize embed":1780,"Decide":1034,"LLM output end":397,"LLM output start":380,"LLM → first audio":529,"STT first out":610,"TTS playback":528.523,"Transcription":554},"end_to_end_ms":1961}
+{"utt_id":"1780505570731-10","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":681,"LLM output end":579,"LLM output start":538,"LLM → first audio":476,"STT first out":1270,"TTS playback":474.906,"Transcription":673},"end_to_end_ms":1737}
+{"utt_id":"1780505571605-11","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1465,"LLM output end":465,"LLM output start":465,"LLM → first audio":482,"STT first out":1684,"TTS playback":482.713,"Transcription":48},"end_to_end_ms":2413}
+{"utt_id":"1780505564071-14","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1554},"no_speak":true}
+{"utt_id":"1780505564065-7","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1491},"no_speak":true}
+{"utt_id":"1780505572877-12","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1032,"LLM output end":463,"LLM output start":451,"LLM → first audio":479,"STT first out":619,"TTS playback":477.978,"Transcription":856},"end_to_end_ms":1975}
+{"utt_id":"1780505565251-15","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":550,"Transcription":573},"no_speak":true}
+{"utt_id":"1780505572877-12","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"LLM output end":487,"LLM output start":486,"LLM → first audio":482,"TTS playback":3.475999999999999,"TTS synthesis":477.942}}
+{"utt_id":"1780505565247-8","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":507.692},"no_speak":true}
+{"utt_id":"1780505568295-16","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":684,"Transcription":623},"no_speak":true}
+{"utt_id":"1780505568290-9","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":528.455},"no_speak":true}
+{"utt_id":"1780505570733-17","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1252,"Transcription":648},"no_speak":true}
+{"utt_id":"1780505570731-10","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":474.849},"no_speak":true}
+{"utt_id":"1780505571634-18","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1538,"Transcription":546},"no_speak":true}
+{"utt_id":"1780505571605-11","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":482.678},"no_speak":true}
+{"utt_id":"1780505572869-19","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1263,"Transcription":650},"no_speak":true}
+{"utt_id":"1780505572877-12","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":481.393},"no_speak":true}
+{"utt_id":"1780505587384-14","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1054,"LLM output end":430,"LLM output start":425,"LLM → first audio":507,"STT first out":528,"TTS playback":507.719,"Transcription":612},"end_to_end_ms":1992}
+{"utt_id":"1780505587384-14","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"LLM output end":543,"LLM output start":543,"LLM → first audio":490,"TTS playback":489.373,"TTS synthesis":507.648,"Transcription":716},"end_to_end_ms":1034}
+{"utt_id":"1780505586108-13","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1558},"no_speak":true}
+{"utt_id":"1780505586116-20","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1565},"no_speak":true}
+{"utt_id":"1780505587384-21","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":524,"Transcription":587},"no_speak":true}
+{"utt_id":"1780505587384-14","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":489.301},"no_speak":true}
+{"utt_id":"1780505603969-16","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":796,"LLM output end":550,"LLM output start":494,"LLM → first audio":576,"STT first out":1576,"TTS playback":575.605,"Transcription":710},"end_to_end_ms":1922}
+{"utt_id":"1780505603969-16","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"LLM output end":504,"LLM output start":503,"LLM → first audio":524,"TTS playback":524.315,"TTS synthesis":575.572,"Transcription":766},"end_to_end_ms":1029}
+{"utt_id":"1780505601030-15","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1950},"no_speak":true}
+{"utt_id":"1780505600990-22","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1922},"no_speak":true}
+{"utt_id":"1780505603971-23","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1761,"Transcription":650},"no_speak":true}
+{"utt_id":"1780505603969-16","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":524.027},"no_speak":true}
+{"utt_id":"1780505612167-17","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":3303,"LLM output end":513,"LLM output start":513,"LLM → first audio":493,"STT first out":1747,"TTS playback":492.484,"Transcription":742},"end_to_end_ms":4309}
+{"utt_id":"1780505612133-24","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1780,"Transcription":690},"no_speak":true}
+{"utt_id":"1780505612167-17","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":492.412},"no_speak":true}
+{"utt_id":"1780505621995-18","cat_source":"miss","path":"no-speak","steps_ms":{},"no_speak":true}
+{"utt_id":"1780505627175-19","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":2625,"LLM output end":550,"LLM output start":414,"LLM → first audio":506,"STT first out":1600,"TTS playback":505.846,"Transcription":706},"end_to_end_ms":3682}
+{"utt_id":"1780505627175-25","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1569,"Transcription":588},"no_speak":true}
+{"utt_id":"1780505627175-19","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":505.691},"no_speak":true}
+{"utt_id":"1780505644185-20","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":5289,"LLM output end":544,"LLM output start":498,"LLM → first audio":524,"STT first out":1269,"TTS playback":523.457,"Transcription":570},"end_to_end_ms":6357}
+{"utt_id":"1780505644132-26","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1352,"Transcription":649},"no_speak":true}
+{"utt_id":"1780505644185-20","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":523.389},"no_speak":true}
+{"utt_id":"1780505657419-21","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":4483,"LLM output end":519,"LLM output start":494,"LLM → first audio":487,"STT first out":1386,"TTS playback":486.464,"Transcription":726},"end_to_end_ms":5490}
+{"utt_id":"1780505657398-27","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1559,"Transcription":616},"no_speak":true}
+{"utt_id":"1780505657419-21","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":486.41},"no_speak":true}
+{"utt_id":"1780505676890-22","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":2264,"LLM output end":398,"LLM output start":381,"LLM → first audio":557,"STT first out":1265,"TTS playback":556.182,"Transcription":546},"end_to_end_ms":3219}
+{"utt_id":"1780505676918-28","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1353,"Transcription":650},"no_speak":true}
+{"utt_id":"1780505676890-22","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":556.082},"no_speak":true}
+{"utt_id":"1780505708187-23","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":5217,"LLM output end":585,"LLM output start":585,"LLM → first audio":494,"STT first out":1504,"TTS playback":494.256,"Transcription":2533},"end_to_end_ms":6297}
+{"utt_id":"1780505708214-29","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1539,"Transcription":612},"no_speak":true}
+{"utt_id":"1780505719443-24","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1971,"LLM output end":598,"LLM output start":560,"LLM → first audio":487,"STT first out":1261,"TTS playback":487.309,"Transcription":559},"end_to_end_ms":3057}
+{"utt_id":"1780505708187-23","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":494.207},"no_speak":true}
+{"utt_id":"1780505720992-25","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":2494,"LLM output end":435,"LLM output start":433,"LLM → first audio":511,"STT first out":1676,"TTS playback":510.43,"Transcription":513},"end_to_end_ms":3440}
+{"utt_id":"1780505723172-26","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":2254,"LLM output end":428,"LLM output start":428,"LLM → first audio":531,"STT first out":1555,"TTS playback":530.441,"Transcription":671},"end_to_end_ms":3214}
+{"utt_id":"1780505724934-27","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1567,"LLM output end":465,"LLM output start":465,"LLM → first audio":472,"STT first out":1153,"TTS playback":472.211,"Transcription":524},"end_to_end_ms":2505}
+{"utt_id":"1780505719307-30","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1345,"Transcription":637},"no_speak":true}
+{"utt_id":"1780505719443-24","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":487.202},"no_speak":true}
+{"utt_id":"1780505729414-29","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1001,"LLM output end":467,"LLM output start":467,"LLM → first audio":473,"STT first out":536,"TTS playback":472.867,"Transcription":703},"end_to_end_ms":1941}
+{"utt_id":"1780505720968-31","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":2219},"no_speak":true}
+{"utt_id":"1780505729414-29","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"LLM output end":427,"LLM output start":427,"LLM → first audio":494,"TTS playback":20.95999999999998,"TTS synthesis":472.713,"Transcription":493},"end_to_end_ms":922}
+{"utt_id":"1780505720992-25","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":510.347},"no_speak":true}
+{"utt_id":"1780505723166-32","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1573,"Transcription":518},"no_speak":true}
+{"utt_id":"1780505723172-26","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":530.191},"no_speak":true}
+{"utt_id":"1780505724926-33","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1185,"Transcription":498},"no_speak":true}
+{"utt_id":"1780505731075-30","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":3540,"LLM output end":385,"LLM output start":385,"LLM → first audio":484,"STT first out":1695,"TTS playback":483.925,"Transcription":522},"end_to_end_ms":4409}
+{"utt_id":"1780505726023-34","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1564},"no_speak":true}
+{"utt_id":"1780505724934-27","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":472.159},"no_speak":true}
+{"utt_id":"1780505726013-28","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1545},"no_speak":true}
+{"utt_id":"1780505737310-32","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":772,"LLM output end":386,"LLM output start":386,"LLM → first audio":477,"STT first out":1495,"TTS playback":476.671,"Transcription":649},"end_to_end_ms":1636}
+{"utt_id":"1780505729463-35","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1475,"Transcription":675},"no_speak":true}
+{"utt_id":"1780505729414-29","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":493.591},"no_speak":true}
+{"utt_id":"1780505739176-33","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":931,"LLM output end":593,"LLM output start":458,"LLM → first audio":483,"STT first out":1559,"TTS playback":482.307,"Transcription":556},"end_to_end_ms":2008}
+{"utt_id":"1780505731089-36","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1749,"Transcription":679},"no_speak":true}
+{"utt_id":"1780505731075-30","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":483.834},"no_speak":true}
+{"utt_id":"1780505734577-31","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1561},"no_speak":true}
+{"utt_id":"1780505742633-34","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":625,"LLM output end":451,"LLM output start":411,"LLM → first audio":545,"STT first out":1495,"TTS playback":544.863,"Transcription":697},"end_to_end_ms":1621}
+{"utt_id":"1780505734606-37","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1748},"no_speak":true}
+{"utt_id":"1780505743770-35","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1687,"LLM output end":440,"LLM output start":439,"LLM → first audio":483,"STT first out":2098,"TTS playback":481.918,"Transcription":1533},"end_to_end_ms":2610}
+{"utt_id":"1780505737327-38","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1767,"Transcription":636},"no_speak":true}
+{"utt_id":"1780505737310-32","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":476.593},"no_speak":true}
+{"utt_id":"1780505747554-36","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":764,"LLM output end":444,"LLM output start":434,"LLM → first audio":477,"STT first out":1515,"TTS playback":477.136,"Transcription":678},"end_to_end_ms":1685}
+{"utt_id":"1780505739176-33","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":482.204},"no_speak":true}
+{"utt_id":"1780505747554-36","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"LLM output end":468,"LLM output start":468,"LLM → first audio":539,"TTS playback":61.68100000000004,"TTS synthesis":477.096,"Transcription":574},"end_to_end_ms":1008}
+{"utt_id":"1780505739166-39","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":514,"Transcription":595},"no_speak":true}
+{"utt_id":"1780505742628-40","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1500},"no_speak":true}
+{"utt_id":"1780505742633-34","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":544.793},"no_speak":true}
+{"utt_id":"1780505743804-41","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1757,"Transcription":631},"no_speak":true}
+{"utt_id":"1780505743770-35","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":481.89},"no_speak":true}
+{"utt_id":"1780505750314-37","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":4764,"LLM output end":492,"LLM output start":448,"LLM → first audio":504,"STT first out":1558,"TTS playback":504.27,"Transcription":780},"end_to_end_ms":5760}
+{"utt_id":"1780505747247-42","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":612},"no_speak":true}
+{"utt_id":"1780505747566-43","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":783,"Transcription":371},"no_speak":true}
+{"utt_id":"1780505756452-39","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1040,"LLM output end":582,"LLM output start":478,"LLM → first audio":473,"STT first out":544,"TTS playback":472.885,"Transcription":97},"end_to_end_ms":2096}
+{"utt_id":"1780505747554-36","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":538.695},"no_speak":true}
+{"utt_id":"1780505757474-40","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":728,"LLM output end":506,"LLM output start":506,"LLM → first audio":474,"STT first out":1472,"TTS playback":473.156,"Transcription":811},"end_to_end_ms":1709}
+{"utt_id":"1780505757474-40","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"LLM output end":592,"LLM output start":495,"LLM → first audio":839,"TTS playback":365.521,"TTS synthesis":473.117,"Transcription":593},"end_to_end_ms":1433}
+{"utt_id":"1780505750318-44","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1534,"Transcription":597},"no_speak":true}
+{"utt_id":"1780505754894-45","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1780},"no_speak":true}
+{"utt_id":"1780505754893-38","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1756},"no_speak":true}
+{"utt_id":"1780505750314-37","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":504.22},"no_speak":true}
+{"utt_id":"1780505763491-42","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1177,"LLM output end":475,"LLM output start":474,"LLM → first audio":540,"STT first out":509,"TTS playback":539.497,"Transcription":831},"end_to_end_ms":2192}
+{"utt_id":"1780505756469-46","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":572,"Transcription":95},"no_speak":true}
+{"utt_id":"1780505756452-39","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":472.819},"no_speak":true}
+{"utt_id":"1780505765257-43","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1336,"LLM output end":520,"LLM output start":520,"LLM → first audio":486,"STT first out":784,"TTS playback":486.132,"Transcription":876},"end_to_end_ms":2343}
+{"utt_id":"1780505765257-43","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"LLM output end":466,"LLM output start":466,"LLM → first audio":526,"TTS playback":39.50300000000004,"TTS synthesis":486.053}}
+{"utt_id":"1780505757491-47","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1684,"Transcription":741},"no_speak":true}
+{"utt_id":"1780505767234-44","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":2286,"LLM output end":523,"LLM output start":478,"LLM → first audio":565,"STT first out":1619,"TTS playback":563.963,"Transcription":566},"end_to_end_ms":3374}
+{"utt_id":"1780505757474-40","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":838.571},"no_speak":true}
+{"utt_id":"1780505761053-41","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1506},"no_speak":true}
+{"utt_id":"1780505760912-48","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1682},"no_speak":true}
+{"utt_id":"1780505763500-49","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1543,"Transcription":620},"no_speak":true}
+{"utt_id":"1780505763491-42","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":539.392},"no_speak":true}
+{"utt_id":"1780505765298-50","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":589,"Transcription":617},"no_speak":true}
+{"utt_id":"1780505765257-43","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":525.522},"no_speak":true}
+{"utt_id":"1780505767247-51","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1564,"Transcription":555},"no_speak":true}
+{"utt_id":"1780505770897-52","cat_source":"miss","path":"no-speak","steps_ms":{},"no_speak":true}
+{"utt_id":"1780505767234-44","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":563.874},"no_speak":true}
+{"utt_id":"1780505770897-45","cat_source":"miss","path":"no-speak","steps_ms":{},"no_speak":true}
+{"utt_id":"1780505778654-47","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1165,"LLM output end":375,"LLM output start":375,"LLM → first audio":484,"STT first out":1534,"TTS playback":483.871,"Transcription":906},"end_to_end_ms":2025}
+{"utt_id":"1780505780015-48","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Categorize embed":1547,"Decide":678,"LLM output end":505,"LLM output start":426,"LLM → first audio":492,"STT first out":1536,"TTS playback":491.186,"Transcription":593},"end_to_end_ms":1675}
+{"utt_id":"1780505781152-49","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1257,"LLM output end":456,"LLM output start":456,"LLM → first audio":484,"STT first out":580,"TTS playback":484.367,"Transcription":777},"end_to_end_ms":2198}
+{"utt_id":"1780505782311-50","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1990,"LLM output end":441,"LLM output start":441,"LLM → first audio":475,"STT first out":536,"TTS playback":474.973,"Transcription":1589},"end_to_end_ms":2907}
+{"utt_id":"1780505776215-53","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1490},"no_speak":true}
+{"utt_id":"1780505776199-46","category":"pricing.prp","cat_source":"miss","path":"no-speak","steps_ms":{"Categorize embed":1585,"STT first out":1575},"no_speak":true}
+{"utt_id":"1780505784414-51","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":946,"LLM output end":452,"LLM output start":452,"LLM → first audio":479,"STT first out":1313,"TTS playback":479.044,"Transcription":840},"end_to_end_ms":1878}
+{"utt_id":"1780505784414-51","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"LLM output end":460,"LLM output start":460,"LLM → first audio":535,"TTS playback":56.42799999999994,"TTS synthesis":479.002}}
+{"utt_id":"1780505778675-54","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1559,"Transcription":560},"no_speak":true}
+{"utt_id":"1780505778654-47","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":483.842},"no_speak":true}
+{"utt_id":"1780505780008-55","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1581,"Transcription":588},"no_speak":true}
+{"utt_id":"1780505780015-48","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":491.15},"no_speak":true}
+{"utt_id":"1780505781167-56","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":604,"Transcription":631},"no_speak":true}
+{"utt_id":"1780505786928-52","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":3548,"LLM output end":544,"LLM output start":544,"LLM → first audio":489,"STT first out":1610,"TTS playback":488.417,"Transcription":750},"end_to_end_ms":4581}
+{"utt_id":"1780505781152-49","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":484.341},"no_speak":true}
+{"utt_id":"1780505782291-57","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":591,"Transcription":645},"no_speak":true}
+{"utt_id":"1780505782311-50","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":474.912},"no_speak":true}
+{"utt_id":"1780505784428-58","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1340,"Transcription":487},"no_speak":true}
+{"utt_id":"1780505784414-51","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":535.365},"no_speak":true}
+{"utt_id":"1780505787236-59","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1578,"Transcription":599},"no_speak":true}
+{"utt_id":"1780505786928-52","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":488.15},"no_speak":true}
+{"utt_id":"1780505797895-53","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1661,"LLM output end":559,"LLM output start":559,"LLM → first audio":479,"STT first out":1165,"TTS playback":478.022,"Transcription":581},"end_to_end_ms":2699}
+{"utt_id":"1780505800360-55","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1004,"LLM output end":659,"LLM output start":659,"LLM → first audio":465,"STT first out":573,"TTS playback":465.495,"Transcription":486},"end_to_end_ms":2129}
+{"utt_id":"1780505803013-57","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1408,"LLM output end":466,"LLM output start":465,"LLM → first audio":496,"STT first out":520,"TTS playback":496.204,"Transcription":1203},"end_to_end_ms":2371}
+{"utt_id":"1780505803013-57","category":"uncategorized","cat_source":"miss","path":"—","steps_ms":{"TTS playback":116.53700000000003,"TTS synthesis":496.164}}
+{"utt_id":"1780505803013-57","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"LLM output end":498,"LLM output start":495,"LLM → first audio":478,"TTS playback":477.103,"TTS synthesis":612.552,"Transcription":776},"end_to_end_ms":976}
+{"utt_id":"1780505799575-61","cat_source":"miss","path":"no-speak","steps_ms":{},"no_speak":true}
+{"utt_id":"1780505799567-54","cat_source":"miss","path":"no-speak","steps_ms":{},"no_speak":true}
+{"utt_id":"1780505797893-60","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1236,"Transcription":600},"no_speak":true}
+{"utt_id":"1780505797895-53","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":477.913},"no_speak":true}
+{"utt_id":"1780505800370-62","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":572,"Transcription":495},"no_speak":true}
+{"utt_id":"1780505802013-56","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":839},"no_speak":true}
+{"utt_id":"1780505800360-55","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":465.464},"no_speak":true}
+{"utt_id":"1780505810275-59","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":754,"LLM output end":382,"LLM output start":382,"LLM → first audio":496,"STT first out":1538,"TTS playback":495.752,"Transcription":687},"end_to_end_ms":1633}
+{"utt_id":"1780505801970-63","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1256,"Transcription":468},"no_speak":true}
+{"utt_id":"1780505812336-60","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":616,"LLM output end":427,"LLM output start":419,"LLM → first audio":873,"TTS playback":872.214,"Transcription":688},"end_to_end_ms":1917}
+{"utt_id":"1780505803013-64","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1642,"Transcription":649},"no_speak":true}
+{"utt_id":"1780505806316-58","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1624},"no_speak":true}
+{"utt_id":"1780505806307-65","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1501},"no_speak":true}
+{"utt_id":"1780505803013-57","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":477.054},"no_speak":true}
+{"utt_id":"1780505812336-60","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"LLM output end":587,"LLM output start":564,"LLM → first audio":498,"TTS playback":496.432,"TTS synthesis":871.969,"Transcription":769},"end_to_end_ms":1086}
+{"utt_id":"1780505809976-66","cat_source":"miss","path":"no-speak","steps_ms":{},"no_speak":true}
+{"utt_id":"1780505810275-59","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":495.709},"no_speak":true}
+{"utt_id":"1780505818175-62","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1246,"LLM output end":569,"LLM output start":563,"LLM → first audio":476,"STT first out":657,"TTS playback":475.351,"Transcription":771},"end_to_end_ms":2291}
+{"utt_id":"1780505810293-67","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":623,"Transcription":151},"no_speak":true}
+{"utt_id":"1780505821466-64","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":697,"LLM output end":405,"LLM output start":392,"LLM → first audio":830,"STT first out":655,"TTS playback":829.85,"Transcription":246},"end_to_end_ms":1933}
+{"utt_id":"1780505821466-64","category":"uncategorized","cat_source":"miss","path":"—","steps_ms":{"TTS playback":646.804,"TTS synthesis":829.538}}
+{"utt_id":"1780505812330-68","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1934,"Transcription":642},"no_speak":true}
+{"utt_id":"1780505821466-64","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"LLM output end":410,"LLM output start":410,"LLM → first audio":524,"TTS playback":523.111,"TTS synthesis":646.709,"Transcription":712},"end_to_end_ms":935}
+{"utt_id":"1780505812336-60","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":496.392},"no_speak":true}
+{"utt_id":"1780505816035-61","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1573},"no_speak":true}
+{"utt_id":"1780505816046-69","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1527,"Transcription":565},"no_speak":true}
+{"utt_id":"1780505818175-62","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":475.309},"no_speak":true}
+{"utt_id":"1780505820973-63","cat_source":"miss","path":"no-speak","steps_ms":{},"no_speak":true}
+{"utt_id":"1780505824852-65","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":4173,"LLM output end":538,"LLM output start":516,"LLM → first audio":505,"STT first out":1479,"TTS playback":504.841,"Transcription":654},"end_to_end_ms":5217}
+{"utt_id":"1780505820370-70","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1495},"no_speak":true}
+{"utt_id":"1780505821448-71","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":531,"Transcription":483},"no_speak":true}
+{"utt_id":"1780505821466-64","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":523.088},"no_speak":true}
+{"utt_id":"1780505824853-72","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1458,"Transcription":606},"no_speak":true}
+{"utt_id":"1780505836429-67","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":686,"LLM output end":459,"LLM output start":459,"LLM → first audio":539,"STT first out":1302,"TTS playback":539.201,"Transcription":684},"end_to_end_ms":1685}
+{"utt_id":"1780505824852-65","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":504.783},"no_speak":true}
+{"utt_id":"1780505836429-67","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"LLM output end":445,"LLM output start":445,"LLM → first audio":480,"TTS playback":480.16,"TTS synthesis":539.104,"Transcription":627},"end_to_end_ms":926}
+{"utt_id":"1780505839497-68","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":2253,"LLM output end":489,"LLM output start":489,"LLM → first audio":484,"STT first out":1478,"TTS playback":484.174,"Transcription":575},"end_to_end_ms":3227}
+{"utt_id":"1780505833734-66","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1496},"no_speak":true}
+{"utt_id":"1780505833728-73","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1876},"no_speak":true}
+{"utt_id":"1780505836460-74","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1344,"Transcription":569},"no_speak":true}
+{"utt_id":"1780505836429-67","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":480.123},"no_speak":true}
+{"utt_id":"1780505839491-75","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1559,"Transcription":615},"no_speak":true}
+{"utt_id":"1780505839497-68","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":484.101},"no_speak":true}
+{"utt_id":"1780505850855-70","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":642,"LLM output end":469,"LLM output start":460,"LLM → first audio":567,"STT first out":1306,"TTS playback":566.987,"Transcription":576},"end_to_end_ms":1678}
+{"utt_id":"1780505851702-71","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":979,"LLM output end":477,"LLM output start":455,"LLM → first audio":485,"STT first out":547,"TTS playback":484.894,"Transcription":599},"end_to_end_ms":1942}
+{"utt_id":"1780505854756-72","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":754,"LLM output end":518,"LLM output start":424,"LLM → first audio":496,"STT first out":1560,"TTS playback":495.638,"Transcription":509},"end_to_end_ms":1768}
+{"utt_id":"1780505854756-72","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"LLM output end":567,"LLM output start":497,"LLM → first audio":529,"TTS playback":33.37499999999994,"TTS synthesis":495.603,"Transcription":664},"end_to_end_ms":1096}
+{"utt_id":"1780505850029-76","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1117},"no_speak":true}
+{"utt_id":"1780505850015-69","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1099},"no_speak":true}
+{"utt_id":"1780505850851-77","cat_source":"miss","path":"no-speak","steps_ms":{"Transcription":510},"no_speak":true}
+{"utt_id":"1780505858733-74","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":513,"LLM output end":461,"LLM output start":461,"LLM → first audio":494,"STT first out":1235,"TTS playback":493.769,"Transcription":882},"end_to_end_ms":1468}
+{"utt_id":"1780505850855-70","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":566.95},"no_speak":true}
+{"utt_id":"1780505851661-78","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":578,"Transcription":611},"no_speak":true}
+{"utt_id":"1780505859727-75","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":800,"LLM output end":348,"LLM output start":348,"LLM → first audio":482,"STT first out":1509,"TTS playback":482.399,"Transcription":771},"end_to_end_ms":1630}
+{"utt_id":"1780505851702-71","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":484.803},"no_speak":true}
+{"utt_id":"1780505862696-76","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Categorize embed":1564,"Decide":754,"LLM output end":438,"LLM output start":438,"LLM → first audio":505,"STT first out":1540,"TTS playback":504.62,"Transcription":475},"end_to_end_ms":1698}
+{"utt_id":"1780505854773-79","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1761,"Transcription":489},"no_speak":true}
+{"utt_id":"1780505862696-76","category":"appointments.reschedule","cat_source":"miss","path":"llm","steps_ms":{"Categorize embed":1733,"LLM output end":409,"LLM output start":409,"LLM → first audio":503,"TTS playback":503.589,"TTS synthesis":504.531,"Transcription":648},"end_to_end_ms":913}
+{"utt_id":"1780505854756-72","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":528.907},"no_speak":true}
+{"utt_id":"1780505856910-80","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1655,"Transcription":714},"no_speak":true}
+{"utt_id":"1780505856896-73","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1621},"no_speak":true}
+{"utt_id":"1780505858782-81","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1159},"no_speak":true}
+{"utt_id":"1780505866335-77","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1629,"LLM output end":395,"LLM output start":386,"LLM → first audio":539,"STT first out":1201,"TTS playback":538.484,"Transcription":516},"end_to_end_ms":2564}
+{"utt_id":"1780505858733-74","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":493.557},"no_speak":true}
+{"utt_id":"1780505859727-75","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"Categorize embed":1876,"TTS synthesis":482.374},"no_speak":true}
+{"utt_id":"1780505859736-82","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1535,"Transcription":605},"no_speak":true}
+{"utt_id":"1780505871305-79","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":644,"LLM output end":446,"LLM output start":444,"LLM → first audio":517,"TTS playback":517.266,"Transcription":761},"end_to_end_ms":1608}
+{"utt_id":"1780505862689-83","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1568,"Transcription":582},"no_speak":true}
+{"utt_id":"1780505871305-79","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"LLM output end":568,"LLM output start":568,"LLM → first audio":484,"TTS playback":483.392,"TTS synthesis":517.211,"Transcription":612},"end_to_end_ms":1054}
+{"utt_id":"1780505862696-76","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":503.55},"no_speak":true}
+{"utt_id":"1780505866351-84","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1291,"Transcription":606},"no_speak":true}
+{"utt_id":"1780505866335-77","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":538.404},"no_speak":true}
+{"utt_id":"1780505877938-81","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Categorize embed":1480,"Decide":1106,"LLM output end":457,"LLM output start":457,"LLM → first audio":514,"STT first out":517,"TTS playback":513.778,"Transcription":757},"end_to_end_ms":2078}
+{"utt_id":"1780505869351-85","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1564,"Transcription":652},"no_speak":true}
+{"utt_id":"1780505869369-78","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":2011},"no_speak":true}
+{"utt_id":"1780505877938-81","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"LLM output end":343,"LLM output start":340,"LLM → first audio":510,"TTS playback":509.079,"TTS synthesis":513.71,"Transcription":637},"end_to_end_ms":859}
+{"utt_id":"1780505871313-86","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1575,"Transcription":585},"no_speak":true}
+{"utt_id":"1780505871305-79","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":483.365},"no_speak":true}
+{"utt_id":"1780505883114-83","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1620,"LLM output end":425,"LLM output start":424,"LLM → first audio":511,"STT first out":1141,"TTS playback":510.697,"Transcription":1314},"end_to_end_ms":2556}
+{"utt_id":"1780505876380-80","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1551},"no_speak":true}
+{"utt_id":"1780505876390-87","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1566},"no_speak":true}
+{"utt_id":"1780505884877-85","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":700,"LLM output end":377,"LLM output start":377,"LLM → first audio":479,"TTS playback":479.148,"Transcription":395},"end_to_end_ms":1557}
+{"utt_id":"1780505885679-86","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Categorize embed":1749,"Decide":1148,"LLM output end":462,"LLM output start":457,"LLM → first audio":483,"STT first out":615,"TTS playback":482.251,"Transcription":686},"end_to_end_ms":2093}
+{"utt_id":"1780505878122-88","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1744,"Transcription":671},"no_speak":true}
+{"utt_id":"1780505877938-81","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":509.046},"no_speak":true}
+{"utt_id":"1780505888076-87","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1113,"LLM output end":500,"LLM output start":426,"LLM → first audio":501,"STT first out":609,"TTS playback":499.953,"Transcription":668},"end_to_end_ms":2114}
+{"utt_id":"1780505880939-89","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1567},"no_speak":true}
+{"utt_id":"1780505881003-82","category":"appointments.reschedule","cat_source":"miss","path":"no-speak","steps_ms":{"Categorize embed":1516,"STT first out":1505},"no_speak":true}
+{"utt_id":"1780505890581-88","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":687,"LLM output end":381,"LLM output start":381,"LLM → first audio":483,"STT first out":1293,"TTS playback":482.209,"Transcription":680},"end_to_end_ms":1551}
+{"utt_id":"1780505883114-90","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1573,"Transcription":590},"no_speak":true}
+{"utt_id":"1780505884395-84","category":"pricing.filler","cat_source":"miss","path":"no-speak","steps_ms":{"Categorize embed":543,"STT first out":530},"no_speak":true}
+{"utt_id":"1780505884874-91","cat_source":"miss","path":"no-speak","steps_ms":{"Transcription":633},"no_speak":true}
+{"utt_id":"1780505883114-83","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":510.592},"no_speak":true}
+{"utt_id":"1780505892675-89","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":886,"LLM output end":397,"LLM output start":397,"LLM → first audio":462,"STT first out":1492,"TTS playback":461.543,"Transcription":605},"end_to_end_ms":1746}
+{"utt_id":"1780505885677-92","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":668,"Transcription":689},"no_speak":true}
+{"utt_id":"1780505884877-85","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":479.101},"no_speak":true}
+{"utt_id":"1780505885679-86","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":482.112},"no_speak":true}
+{"utt_id":"1780505892675-89","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"LLM output end":507,"LLM output start":456,"LLM → first audio":499,"TTS playback":36.762,"TTS synthesis":461.481,"Transcription":567},"end_to_end_ms":1006}
+{"utt_id":"1780505888074-93","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":583,"Transcription":737},"no_speak":true}
+{"utt_id":"1780505888076-87","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":499.91},"no_speak":true}
+{"utt_id":"1780505890572-94","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1274,"Transcription":640},"no_speak":true}
+{"utt_id":"1780505890581-88","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":482.174},"no_speak":true}
+{"utt_id":"1780505900895-91","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1131,"LLM output end":445,"LLM output start":401,"LLM → first audio":555,"STT first out":610,"TTS playback":553.631,"Transcription":275},"end_to_end_ms":2131}
+{"utt_id":"1780505900895-91","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"LLM output end":412,"LLM output start":412,"LLM → first audio":536,"TTS playback":536.431,"TTS synthesis":553.601}}
+{"utt_id":"1780505892691-95","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1560,"Transcription":452},"no_speak":true}
+{"utt_id":"1780505902443-92","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":2603,"LLM output end":502,"LLM output start":427,"LLM → first audio":486,"STT first out":1587,"TTS playback":485.514,"Transcription":690},"end_to_end_ms":3592}
+{"utt_id":"1780505892675-89","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":498.125},"no_speak":true}
+{"utt_id":"1780505900300-90","cat_source":"miss","path":"no-speak","steps_ms":{},"no_speak":true}
+{"utt_id":"1780505900291-96","cat_source":"miss","path":"no-speak","steps_ms":{},"no_speak":true}
+{"utt_id":"1780505900870-97","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":586,"Transcription":514},"no_speak":true}
+{"utt_id":"1780505900895-91","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":536.385},"no_speak":true}
+{"utt_id":"1780505902445-98","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1575,"Transcription":643},"no_speak":true}
+{"utt_id":"1780505902443-92","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":484.376},"no_speak":true}
+{"utt_id":"1780505911439-93","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":2933,"LLM output end":524,"LLM output start":524,"LLM → first audio":639,"STT first out":2076,"TTS playback":638.973,"Transcription":332},"end_to_end_ms":4097}
+{"utt_id":"1780505914668-94","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1843,"LLM output end":524,"LLM output start":524,"LLM → first audio":659,"STT first out":1334,"TTS playback":659.182,"Transcription":525},"end_to_end_ms":3026}
+{"utt_id":"1780505916491-95","category":"pricing.prp","cat_source":"miss","path":"llm","steps_ms":{"Categorize embed":1738,"Decide":2240,"LLM output end":524,"LLM output start":524,"LLM → first audio":646,"STT first out":1714,"TTS playback":645.632,"Transcription":841},"end_to_end_ms":3411}
+{"utt_id":"1780505911439-99","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":2089,"Transcription":356},"no_speak":true}
+{"utt_id":"1780505911439-93","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":638.944},"no_speak":true}
+{"utt_id":"1780505914632-100","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1342,"Transcription":507},"no_speak":true}
+{"utt_id":"1780505914668-94","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":649.673},"no_speak":true}
+{"utt_id":"1780505916491-101","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1727,"Transcription":525},"no_speak":true}
+{"utt_id":"1780505916491-95","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":645.523},"no_speak":true}
+{"utt_id":"1780505933552-102","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1267,"Transcription":673},"no_speak":true}
+{"utt_id":"1780505946339-96","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":2513,"LLM output end":488,"LLM output start":482,"LLM → first audio":476,"STT first out":1324,"TTS playback":475.545,"Transcription":642},"end_to_end_ms":3478}
+{"utt_id":"1780505946352-103","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1578,"Transcription":670},"no_speak":true}
+{"utt_id":"1780505952036-97","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":4246,"LLM output end":505,"LLM output start":446,"LLM → first audio":811,"STT first out":1549,"TTS playback":810.554,"Transcription":607},"end_to_end_ms":5562}
+{"utt_id":"1780505946339-96","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":475.511},"no_speak":true}
+{"utt_id":"1780505958338-98","category":"appointments","cat_source":"regex","path":"llm","steps_ms":{"Categorize regex":3091,"Decide":3241,"Filler/answer fire":1195,"LLM output end":530,"LLM output start":495,"LLM → first audio":493,"STT first out":1471,"TTS playback":493.195,"Transcription":527},"end_to_end_ms":4929}
+{"utt_id":"1780505952056-104","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1495,"Transcription":543},"no_speak":true}
+{"utt_id":"1780505952036-97","category":"uncategorized","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":810.478},"no_speak":true}
+{"utt_id":"1780505966574-99","category":"logistics.address","cat_source":"regex","path":"catalog","steps_ms":{"Categorize embed":1567,"Categorize regex":1957,"Decide":1957,"Filler/answer fire":0,"STT first out":1557,"TTS playback":481.534},"end_to_end_ms":2438}
+{"utt_id":"1780505958408-105","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1542,"Transcription":666},"no_speak":true}
+{"utt_id":"1780505958338-98","category":"appointments","cat_source":"miss","path":"no-speak","steps_ms":{"TTS synthesis":493.161},"no_speak":true}
+{"utt_id":"1780505971033-101","category":"pricing.prp","cat_source":"miss","path":"llm","steps_ms":{"Categorize embed":645,"Decide":977,"LLM output end":512,"LLM output start":512,"LLM → first audio":644,"STT first out":632,"TTS playback":644.281,"Transcription":344},"end_to_end_ms":2132}
+{"utt_id":"1780505972079-102","category":"uncategorized","cat_source":"regex","path":"llm","steps_ms":{"Categorize embed":1602,"Categorize regex":1591,"Decide":1742,"LLM output end":524,"LLM output start":524,"LLM → first audio":666,"STT first out":1591,"TTS playback":665.798,"Transcription":524},"end_to_end_ms":2208}
+{"utt_id":"1780505972079-102","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"LLM output end":550,"LLM output start":524,"LLM → first audio":617,"TTS playback":617.356,"TTS synthesis":665.751,"Transcription":859},"end_to_end_ms":1168}

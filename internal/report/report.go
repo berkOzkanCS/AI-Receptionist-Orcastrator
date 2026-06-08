@@ -88,6 +88,7 @@ func (r Report) RenderText() string {
 	fmt.Fprintf(&b, "  catalog answer:       %d   (predetermined line)\n", r.Paths.Catalog)
 	fmt.Fprintf(&b, "  llm-generated reply:  %d\n", r.Paths.LLM)
 	fmt.Fprintf(&b, "  gemini called:        %d   (verify or answer)\n", r.Paths.Gemini)
+	fmt.Fprintf(&b, "  uncategorized (miss): %d   (no regex/embedding hit)\n", r.Paths.Uncategorized)
 	if r.Session.Exit == "fail_fast" && r.Session.FailCause != "" {
 		fmt.Fprintln(&b)
 		fmt.Fprintln(&b, "---- failed child stderr ----")
@@ -146,7 +147,7 @@ func RenderDetails(utts []*collect.Utterance) string {
 		if u.Category != "" {
 			hdr += " · " + u.Category
 		}
-		hdr += " · " + u.Path()
+		hdr += " · cat:" + u.CatSource() + " · " + u.Path()
 		fmt.Fprintln(&b)
 		fmt.Fprintln(&b, hdr)
 		fmt.Fprintf(&b, "  %-18s %10s   %s\n", "step", "took", "what it measures")

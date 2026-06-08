@@ -29,10 +29,11 @@ type StageStats struct {
 // mutually exclusive (an utterance can play a filler and then an LLM reply), so
 // these are independent counts.
 type PathCounts struct {
-	Filler  int `json:"filler"`  // a time-buying filler was spoken
-	Catalog int `json:"catalog"` // a predetermined catalog answer was spoken
-	LLM     int `json:"llm"`     // a Gemini-generated reply was spoken
-	Gemini  int `json:"gemini"`  // a Gemini call was made (verify or answer)
+	Filler        int `json:"filler"`        // a time-buying filler was spoken
+	Catalog       int `json:"catalog"`       // a predetermined catalog answer was spoken
+	LLM           int `json:"llm"`           // a Gemini-generated reply was spoken
+	Gemini        int `json:"gemini"`        // a Gemini call was made (verify or answer)
+	Uncategorized int `json:"uncategorized"` // a spoken utterance neither regex nor embedding categorized (miss)
 }
 
 // Snapshot is a point-in-time view of every metric plus session counts.
@@ -86,6 +87,11 @@ func (a *Aggregator) Observe(u *collect.Utterance) {
 	}
 	if u.GeminiCalled() {
 		a.paths.Gemini++
+	}
+	// A miss = a real spoken utterance that neither categorizer committed
+	// (it fell through to the LLM). Skip no-speak/errored turns.
+	if u.Err == "" && !u.NoSpeak && u.CatSource() == "miss" {
+		a.paths.Uncategorized++
 	}
 	for _, d := range collect.DisplayOrder {
 		if v, ok := u.Metric(d.Key); ok {

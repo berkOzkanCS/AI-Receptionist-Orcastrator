@@ -20,22 +20,33 @@ import (
 // start" metrics (transcribe, categorize, decide) are elapsed-since-first-word
 // so they're directly comparable; gemini and the tts.* ones are stage durations.
 const (
-	MStt        = "stt_final"      // speech-start -> STT final transcript (transcription time)
-	MCategorize = "categorize"     // speech-start -> first categorizer hit (how fast intent was known)
-	MDecision   = "llm_decision"   // speech-start -> decision emitted (filler/answer chosen)
-	MGemini     = "llm_gemini"     // Gemini call duration
-	MFirstByte  = "tts_first_byte" // TTS command arrival -> first PCM byte
-	MPlayed     = "tts_played"     // TTS command arrival -> first audio audible
-	ME2E        = "end_to_end"     // speech-start -> first audio audible
+	MSTTFirst    = "stt_first"      // speech-start -> first partial (first STT output fed to categorization)
+	MStt         = "stt_final"      // speech-start -> STT final transcript (transcription time)
+	MCatRegex    = "cat_regex"      // speech-start -> regex categorizer hit
+	MCatEmbed    = "cat_embed"      // speech-start -> embedding categorizer hit
+	MDecision    = "llm_decision"   // speech-start -> route committed (filler/answer chosen, or LLM dispatch)
+	MFillerFire  = "filler_fire"    // decision -> filler/prerecorded catalog text selected & pushed
+	MLLMFirstTok = "llm_first_tok"  // decision -> LLM output start (first streamed token)
+	MGemini      = "llm_gemini"     // decision -> LLM output end (full reply / call duration)
+	MLLMAudio    = "llm_to_audio"   // LLM output end -> first audio audible
+	MFirstByte   = "tts_first_byte" // TTS command arrival -> first PCM byte
+	MPlayed      = "tts_played"     // TTS command arrival -> first audio audible
+	ME2E         = "end_to_end"     // speech-start -> first audio audible
 )
 
 // DisplayOrder is the canonical ordering + labels for the metrics, shared by the
-// dashboard and the report so both read the same.
+// dashboard and the report so both read the same. Labels are kept <=12 chars to
+// fit the dashboard's aggregates column.
 var DisplayOrder = []struct{ Key, Label string }{
+	{MSTTFirst, "STT 1st out"},
 	{MStt, "Transcribe"},
-	{MCategorize, "Categorize"},
+	{MCatRegex, "Cat regex"},
+	{MCatEmbed, "Cat embed"},
 	{MDecision, "Decide"},
-	{MGemini, "LLM (Gemini)"},
+	{MFillerFire, "Filler fire"},
+	{MLLMFirstTok, "LLM 1st tok"},
+	{MGemini, "LLM end"},
+	{MLLMAudio, "LLM→audio"},
 	{MFirstByte, "TTS 1st byte"},
 	{MPlayed, "TTS played"},
 	{ME2E, "END-TO-END"},
@@ -98,34 +109,41 @@ func (u *Utterance) gap(a, b sharedmetrics.Stage) (float64, bool) {
 // whether the utterance had enough joined stages to compute it.
 func (u *Utterance) Metric(key string) (float64, bool) {
 	switch key {
+	case MSTTFirst:
+		// speech-start -> first partial: the first STT output fed to categorization.
+		return u.gap(sharedmetrics.StageSpeechStart, sharedmetrics.StageSTTPartial)
 	case MStt:
 		if v, ok := u.gap(sharedmetrics.StageSpeechStart, sharedmetrics.StageSTTFinal); ok {
 			return v, true
 		}
 		return u.deltaOf(sharedmetrics.StageSTTFinal)
-	case MCategorize:
-		// Earliest categorizer hit, measured as elapsed-from-first-word.
-		r, okR := u.deltaOf(sharedmetrics.StageLLMRegexHit)
-		e, okE := u.deltaOf(sharedmetrics.StageLLMEmbeddingHit)
-		switch {
-		case okR && okE:
-			if e < r {
-				return e, true
-			}
-			return r, true
-		case okR:
-			return r, true
-		case okE:
-			return e, true
-		}
-		return 0, false
+	case MCatRegex:
+		// speech-start -> regex hit (the engine's elapsed-from-first-word clock).
+		return u.deltaOf(sharedmetrics.StageLLMRegexHit)
+	case MCatEmbed:
+		// speech-start -> embedding hit (recorded for committed and non-committed).
+		return u.deltaOf(sharedmetrics.StageLLMEmbeddingHit)
 	case MDecision:
-		// Elapsed-from-first-word to the decision (filler/answer chosen). This is
-		// the engine's own elapsed clock, always positive — the decision can fire
-		// before the final transcript, so a wall gap from stt.final would be empty.
-		return u.deltaOf(sharedmetrics.StageLLMDecision)
+		// speech-start -> route committed. The engine's own elapsed clock for a
+		// filler/answer decision (can fire before the final transcript). For an
+		// uncategorized utterance there is no engine decision, so fall back to the
+		// LLM dispatch — that is the moment the LLM route is committed.
+		if v, ok := u.deltaOf(sharedmetrics.StageLLMDecision); ok {
+			return v, true
+		}
+		return u.gap(sharedmetrics.StageSpeechStart, sharedmetrics.StageLLMGeminiStart)
+	case MFillerFire:
+		// decision -> catalog filler/answer text selected & pushed to TTS.
+		return u.gap(sharedmetrics.StageLLMDecision, sharedmetrics.StageLLMEmit)
+	case MLLMFirstTok:
+		// decision -> LLM output start (first streamed token), measured from dispatch.
+		return u.deltaOf(sharedmetrics.StageLLMFirstToken)
 	case MGemini:
+		// decision -> LLM output end (full reply / call duration).
 		return u.deltaOf(sharedmetrics.StageLLMGemini)
+	case MLLMAudio:
+		// LLM output end -> first audio audible.
+		return u.gap(sharedmetrics.StageLLMGemini, sharedmetrics.StageTTSPlayed)
 	case MFirstByte:
 		if v, ok := u.gap(sharedmetrics.StageTTSArrival, sharedmetrics.StageTTSFirstByte); ok {
 			return v, true
@@ -181,6 +199,15 @@ func (u *Utterance) Path() string {
 	return "—"
 }
 
+// CatSource reports how the utterance was categorized: "regex", "embedding",
+// or "miss" (neither categorizer produced a committed hit).
+func (u *Utterance) CatSource() string {
+	if u.catSource == "" {
+		return "miss"
+	}
+	return u.catSource
+}
+
 // Phase is one pipeline step and how long it took (a duration, in ms), with a
 // plain-language note of what it measures. This is the simple "where did the
 // time go" view — each phase is an independently-measured duration, not a
@@ -200,19 +227,37 @@ type Phase struct {
 func (u *Utterance) Phases() []Phase {
 	var ps []Phase
 
+	if d, ok := u.Metric(MSTTFirst); ok {
+		ps = append(ps, Phase{"STT first out", d, true, "started speaking → first transcript"})
+	}
 	if d, ok := u.deltaOf(sharedmetrics.StageSTTFinal); ok {
 		ps = append(ps, Phase{"Transcription", d, true, "finished speaking → text ready"})
 	}
-	if d, ok := u.Metric(MCategorize); ok {
-		ps = append(ps, Phase{"Categorization", d, true, "started speaking → intent known"})
+	if d, ok := u.Metric(MCatRegex); ok {
+		ps = append(ps, Phase{"Categorize regex", d, true, "started speaking → regex hit"})
+	}
+	if d, ok := u.Metric(MCatEmbed); ok {
+		ps = append(ps, Phase{"Categorize embed", d, true, "started speaking → embedding hit"})
+	}
+	if d, ok := u.Metric(MDecision); ok {
+		ps = append(ps, Phase{"Decide", d, true, "started speaking → route chosen (" + u.CatSource() + ")"})
+	}
+	if d, ok := u.Metric(MFillerFire); ok {
+		ps = append(ps, Phase{"Filler/answer fire", d, true, "decision → catalog line selected"})
 	}
 	if u.geminiCalled {
+		if d, ok := u.Metric(MLLMFirstTok); ok {
+			ps = append(ps, Phase{"LLM output start", d, true, "decision → first token"})
+		}
 		d, ok := u.deltaOf(sharedmetrics.StageLLMGemini)
-		note := "the LLM request"
+		note := "decision → full reply (output end)"
 		if u.geminiKind == "verify" {
 			note = "background check, didn't delay the reply"
 		}
-		ps = append(ps, Phase{"LLM (Gemini) call", d, ok, note})
+		ps = append(ps, Phase{"LLM output end", d, ok, note})
+	}
+	if d, ok := u.Metric(MLLMAudio); ok {
+		ps = append(ps, Phase{"LLM → first audio", d, true, "LLM reply → you hear it"})
 	}
 	fb, okFb := u.deltaOf(sharedmetrics.StageTTSFirstByte)
 	if okFb {
@@ -234,6 +279,7 @@ func (u *Utterance) Phases() []Phase {
 type Timing struct {
 	UttID      string             `json:"utt_id"`
 	Category   string             `json:"category,omitempty"`
+	CatSource  string             `json:"cat_source"` // "regex" | "embedding" | "miss"
 	Path       string             `json:"path"`
 	StepsMs    map[string]float64 `json:"steps_ms"` // step name -> how long it took
 	EndToEndMs float64            `json:"end_to_end_ms,omitempty"`
@@ -250,12 +296,13 @@ func (u *Utterance) Timing() Timing {
 		}
 	}
 	t := Timing{
-		UttID:    string(u.UttID),
-		Category: u.Category,
-		Path:     u.Path(),
-		StepsMs:  steps,
-		NoSpeak:  u.NoSpeak,
-		Err:      u.Err,
+		UttID:     string(u.UttID),
+		Category:  u.Category,
+		CatSource: u.CatSource(),
+		Path:      u.Path(),
+		StepsMs:   steps,
+		NoSpeak:   u.NoSpeak,
+		Err:       u.Err,
 	}
 	if v, ok := u.Metric(ME2E); ok {
 		t.EndToEndMs = v
@@ -267,6 +314,7 @@ func (u *Utterance) Timing() Timing {
 type Joiner struct {
 	mu      sync.Mutex
 	open    map[wire.UttID]*Utterance
+	done    map[wire.UttID]bool // finalized ids: drop late events (e.g. a catalog answer's background verify) so they don't re-open
 	onFinal func(*Utterance)
 	timeout time.Duration
 }
@@ -278,7 +326,7 @@ func NewJoiner(onFinal func(*Utterance), timeout time.Duration) *Joiner {
 	if timeout <= 0 {
 		timeout = 8 * time.Second
 	}
-	return &Joiner{open: map[wire.UttID]*Utterance{}, onFinal: onFinal, timeout: timeout}
+	return &Joiner{open: map[wire.UttID]*Utterance{}, done: map[wire.UttID]bool{}, onFinal: onFinal, timeout: timeout}
 }
 
 // Add folds one MetricEvent into its utterance, finalizing if terminal.
@@ -287,6 +335,10 @@ func (j *Joiner) Add(ev sharedmetrics.MetricEvent) {
 		return
 	}
 	j.mu.Lock()
+	if j.done[ev.UttID] {
+		j.mu.Unlock()
+		return // already finalized; ignore late stragglers (e.g. background verify)
+	}
 	u := j.open[ev.UttID]
 	if u == nil {
 		u = &Utterance{
@@ -322,7 +374,9 @@ func (j *Joiner) Add(ev sharedmetrics.MetricEvent) {
 			u.catSource = "regex"
 		}
 	case sharedmetrics.StageLLMEmbeddingHit:
-		if u.catSource == "" {
+		// Only a committed embedding hit actually categorized the utterance;
+		// non-committed hits are recorded for tuning but must not mask a miss.
+		if u.catSource == "" && ev.Committed {
 			u.catSource = "embedding"
 		}
 	case sharedmetrics.StageLLMGeminiStart:
@@ -346,6 +400,7 @@ func (j *Joiner) Add(ev sharedmetrics.MetricEvent) {
 
 	if j.terminal(u) {
 		delete(j.open, ev.UttID)
+		j.done[ev.UttID] = true
 		j.mu.Unlock()
 		j.onFinal(u)
 		return
@@ -355,6 +410,13 @@ func (j *Joiner) Add(ev sharedmetrics.MetricEvent) {
 
 func (j *Joiner) terminal(u *Utterance) bool {
 	if u.Err != "" {
+		return true
+	}
+	// A catalog answer is "done at selection": it is no longer synthesized, so
+	// it never reaches tts.played. Finalize it the moment it's emitted, counted
+	// as completed rather than swept as no-speak. (A filler->llm turn carries
+	// KindFiller+KindLLM, not KindAnswer, so it still finalizes on its audio.)
+	if u.emitKinds[wire.KindAnswer] {
 		return true
 	}
 	if _, ok := u.Stages[sharedmetrics.StageTTSPlayed]; ok {
@@ -377,6 +439,7 @@ func (j *Joiner) Sweep() {
 			u.NoSpeak = true
 			ready = append(ready, u)
 			delete(j.open, id)
+			j.done[id] = true
 		}
 	}
 	j.mu.Unlock()

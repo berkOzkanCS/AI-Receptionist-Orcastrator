@@ -31,8 +31,9 @@ const (
 	StageLLMRegexHit     Stage = "llm.regex_hit"
 	StageLLMEmbeddingHit Stage = "llm.embedding_hit"
 	StageLLMDecision     Stage = "llm.decision"      // engine emitted a filler/answer
-	StageLLMGeminiStart  Stage = "llm.gemini_start"  // Gemini call dispatched
-	StageLLMGemini       Stage = "llm.gemini"        // Gemini verify/answer returned
+	StageLLMGeminiStart  Stage = "llm.gemini_start"       // Gemini call dispatched
+	StageLLMFirstToken   Stage = "llm.gemini_first_token" // first streamed answer token (output start)
+	StageLLMGemini       Stage = "llm.gemini"             // Gemini verify/answer returned (output end)
 	StageLLMEmit         Stage = "llm.emit"          // speak command pushed to socket
 	StageLLMDropped      Stage = "llm.dropped"       // speak dropped (queue full / no catalog)
 

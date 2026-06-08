@@ -1,0 +1,120 @@
+{
+  "session": {
+    "started_ms": 1780508933716,
+    "ended_ms": 1780509130976,
+    "duration_ms": 197260,
+    "mode": "live",
+    "exit": "graceful"
+  },
+  "stages": {
+    "cat_embed": {
+      "count": 3,
+      "min": 607,
+      "avg": 1298.3333333333333,
+      "p50": 1560,
+      "p95": 1711.2,
+      "max": 1728
+    },
+    "cat_regex": {
+      "count": 2,
+      "min": 2781,
+      "avg": 2969,
+      "p50": 2969,
+      "p95": 3138.2,
+      "max": 3157
+    },
+    "end_to_end": {
+      "count": 0,
+      "min": 0,
+      "avg": 0,
+      "p50": 0,
+      "p95": 0,
+      "max": 0
+    },
+    "filler_fire": {
+      "count": 0,
+      "min": 0,
+      "avg": 0,
+      "p50": 0,
+      "p95": 0,
+      "max": 0
+    },
+    "llm_decision": {
+      "count": 38,
+      "min": 523,
+      "avg": 1273.6842105263158,
+      "p50": 960,
+      "p95": 3308.9,
+      "max": 4784
+    },
+    "llm_first_tok": {
+      "count": 37,
+      "min": 390,
+      "avg": 490.4054054054054,
+      "p50": 471,
+      "p95": 677.1999999999991,
+      "max": 907
+    },
+    "llm_gemini": {
+      "count": 38,
+      "min": 396,
+      "avg": 515.1578947368421,
+      "p50": 494.5,
+      "p95": 667.8999999999997,
+      "max": 907
+    },
+    "llm_to_audio": {
+      "count": 0,
+      "min": 0,
+      "avg": 0,
+      "p50": 0,
+      "p95": 0,
+      "max": 0
+    },
+    "stt_final": {
+      "count": 43,
+      "min": 523,
+      "avg": 1193.5116279069769,
+      "p50": 959,
+      "p95": 2099.3999999999996,
+      "max": 4780
+    },
+    "stt_first": {
+      "count": 52,
+      "min": 514,
+      "avg": 1376.9038461538462,
+      "p50": 1506.5,
+      "p95": 2008.6,
+      "max": 2258
+    },
+    "tts_first_byte": {
+      "count": 0,
+      "min": 0,
+      "avg": 0,
+      "p50": 0,
+      "p95": 0,
+      "max": 0
+    },
+    "tts_played": {
+      "count": 0,
+      "min": 0,
+      "avg": 0,
+      "p50": 0,
+      "p95": 0,
+      "max": 0
+    }
+  },
+  "counts": {
+    "total": 64,
+    "completed": 0,
+    "no_speak": 64,
+    "errored": 0
+  },
+  "paths": {
+    "filler": 1,
+    "catalog": 0,
+    "llm": 37,
+    "gemini": 38,
+    "uncategorized": 0
+  }
+}

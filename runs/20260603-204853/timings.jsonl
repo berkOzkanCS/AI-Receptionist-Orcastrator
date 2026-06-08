@@ -1,0 +1,64 @@
+{"utt_id":"1780506202334-112","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1576,"Transcription":652},"no_speak":true}
+{"utt_id":"1780506203776-113","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1996},"no_speak":true}
+{"utt_id":"1780506206004-114","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1646,"Transcription":519},"no_speak":true}
+{"utt_id":"1780506207972-115","cat_source":"miss","path":"no-speak","steps_ms":{},"no_speak":true}
+{"utt_id":"1780506209205-116","cat_source":"miss","path":"no-speak","steps_ms":{},"no_speak":true}
+{"utt_id":"1780506211116-118","cat_source":"miss","path":"no-speak","steps_ms":{},"no_speak":true}
+{"utt_id":"1780506211355-119","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1833,"Transcription":79},"no_speak":true}
+{"utt_id":"1780506214271-120","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1664,"Transcription":615},"no_speak":true}
+{"utt_id":"1780506196630-111","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1409,"Transcription":527},"no_speak":true}
+{"utt_id":"1780506209866-117","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1768},"no_speak":true}
+{"utt_id":"1780507268231-121","cat_source":"miss","path":"no-speak","steps_ms":{},"no_speak":true}
+{"utt_id":"1780507485762-122","cat_source":"miss","path":"no-speak","steps_ms":{},"no_speak":true}
+{"utt_id":"1780507521261-123","cat_source":"miss","path":"no-speak","steps_ms":{},"no_speak":true}
+{"utt_id":"1780508963759-1","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":2073,"LLM output end":826,"LLM output start":826,"STT first out":1588,"Transcription":653},"no_speak":true}
+{"utt_id":"1780508965484-2","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1609,"LLM output end":575,"LLM output start":568,"STT first out":1149,"Transcription":641},"no_speak":true}
+{"utt_id":"1780508967374-3","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1269},"no_speak":true}
+{"utt_id":"1780508969573-4","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":547,"LLM output end":573,"LLM output start":487,"STT first out":1457,"Transcription":453},"no_speak":true}
+{"utt_id":"1780508971278-5","category":"logistics.address","cat_source":"miss","path":"no-speak","steps_ms":{"Decide":1968,"LLM output end":526,"STT first out":1510,"Transcription":527},"no_speak":true}
+{"utt_id":"1780508972969-6","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1829,"LLM output end":496,"LLM output start":480,"STT first out":1336,"Transcription":659},"no_speak":true}
+{"utt_id":"1780508974502-7","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1597},"no_speak":true}
+{"utt_id":"1780508976773-8","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":668,"LLM output end":513,"LLM output start":472,"STT first out":1349,"Transcription":657},"no_speak":true}
+{"utt_id":"1780508979016-9","cat_source":"miss","path":"no-speak","steps_ms":{},"no_speak":true}
+{"utt_id":"1780508979714-10","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":991,"LLM output end":460,"LLM output start":460,"STT first out":571,"Transcription":593},"no_speak":true}
+{"utt_id":"1780508980939-11","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":858,"LLM output end":400,"LLM output start":400,"STT first out":1741,"Transcription":582},"no_speak":true}
+{"utt_id":"1780508984575-12","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":592,"LLM output end":449,"LLM output start":448,"Transcription":797},"no_speak":true}
+{"utt_id":"1780508988233-14","cat_source":"miss","path":"no-speak","steps_ms":{},"no_speak":true}
+{"utt_id":"1780508985352-13","category":"appointments.confirm","cat_source":"miss","path":"llm","steps_ms":{"Categorize embed":607,"Decide":982,"LLM output end":441,"LLM output start":441,"STT first out":596,"Transcription":510},"no_speak":true}
+{"utt_id":"1780508988682-15","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1547},"no_speak":true}
+{"utt_id":"1780508992836-16","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":932,"LLM output end":476,"LLM output start":438,"STT first out":1493,"Transcription":585},"no_speak":true}
+{"utt_id":"1780508998953-17","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1514},"no_speak":true}
+{"utt_id":"1780509000774-18","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":566,"LLM output end":433,"LLM output start":418,"STT first out":1580,"Transcription":563},"no_speak":true}
+{"utt_id":"1780509019152-19","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":4784,"LLM output end":507,"LLM output start":507,"STT first out":1930,"Transcription":603},"no_speak":true}
+{"utt_id":"1780509024051-20","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1458},"no_speak":true}
+{"utt_id":"1780509025312-21","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":692,"LLM output end":432,"LLM output start":432,"STT first out":1554,"Transcription":601},"no_speak":true}
+{"utt_id":"1780509026755-22","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":784,"LLM output end":459,"LLM output start":456,"Transcription":678},"no_speak":true}
+{"utt_id":"1780509037955-23","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1342},"no_speak":true}
+{"utt_id":"1780509038935-24","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":947,"LLM output end":577,"LLM output start":439,"STT first out":1290,"Transcription":569},"no_speak":true}
+{"utt_id":"1780509040099-25","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":654,"LLM output end":535,"LLM output start":443,"STT first out":1558,"Transcription":672},"no_speak":true}
+{"utt_id":"1780509041375-26","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":941,"LLM output end":471,"LLM output start":471,"STT first out":1691,"Transcription":577},"no_speak":true}
+{"utt_id":"1780509044800-27","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1552},"no_speak":true}
+{"utt_id":"1780509050874-28","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":961,"LLM output end":488,"LLM output start":488,"STT first out":608,"Transcription":680},"no_speak":true}
+{"utt_id":"1780509058334-29","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":971,"LLM output end":570,"LLM output start":463,"STT first out":532,"Transcription":584},"no_speak":true}
+{"utt_id":"1780509066334-30","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1494},"no_speak":true}
+{"utt_id":"1780509068115-31","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1159,"LLM output end":474,"LLM output start":474,"STT first out":720,"Transcription":579},"no_speak":true}
+{"utt_id":"1780509073178-32","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":3314,"LLM output end":459,"LLM output start":458,"STT first out":1510,"Transcription":458},"no_speak":true}
+{"utt_id":"1780509078464-33","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":1489},"no_speak":true}
+{"utt_id":"1780509080893-34","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":868,"LLM output end":498,"LLM output start":498,"STT first out":514,"Transcription":581},"no_speak":true}
+{"utt_id":"1780509082034-35","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":875,"LLM output end":500,"LLM output start":500,"STT first out":1503,"Transcription":602},"no_speak":true}
+{"utt_id":"1780509083556-36","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":598,"LLM output end":473,"LLM output start":473,"STT first out":1340,"Transcription":487},"no_speak":true}
+{"utt_id":"1780509084854-37","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":586,"LLM output end":907,"LLM output start":907,"Transcription":589},"no_speak":true}
+{"utt_id":"1780509085597-38","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1146,"LLM output end":421,"LLM output start":421,"STT first out":646,"Transcription":638},"no_speak":true}
+{"utt_id":"1780509087235-39","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":962,"LLM output end":493,"LLM output start":491,"STT first out":563,"Transcription":485},"no_speak":true}
+{"utt_id":"1780509090614-40","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1173,"LLM output end":449,"LLM output start":449,"STT first out":599,"Transcription":776},"no_speak":true}
+{"utt_id":"1780509093701-41","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":959,"LLM output end":533,"LLM output start":423,"STT first out":524,"Transcription":575},"no_speak":true}
+{"utt_id":"1780509095740-42","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":773,"LLM output end":557,"LLM output start":512,"STT first out":1498,"Transcription":516},"no_speak":true}
+{"utt_id":"1780509098519-43","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Categorize embed":1560,"Decide":523,"LLM output end":492,"LLM output start":479,"STT first out":1542,"Transcription":511},"no_speak":true}
+{"utt_id":"1780509100695-44","category":"uncategorized","cat_source":"regex","path":"filler→llm","steps_ms":{"Categorize regex":2781,"Decide":2932,"LLM output end":396,"LLM output start":396,"STT first out":2258,"Transcription":594},"no_speak":true}
+{"utt_id":"1780509105069-45","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":2050},"no_speak":true}
+{"utt_id":"1780509106724-46","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":787,"LLM output end":530,"LLM output start":530,"STT first out":1600,"Transcription":756},"no_speak":true}
+{"utt_id":"1780509109081-47","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1064,"LLM output end":620,"LLM output start":441,"STT first out":1685,"Transcription":1102},"no_speak":true}
+{"utt_id":"1780509110691-48","category":"uncategorized","cat_source":"regex","path":"llm","steps_ms":{"Categorize embed":1728,"Categorize regex":3157,"Decide":3308,"LLM output end":526,"LLM output start":526,"STT first out":704,"Transcription":486},"no_speak":true}
+{"utt_id":"1780509113978-49","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1995,"LLM output end":640,"LLM output start":640,"STT first out":1632,"Transcription":414},"no_speak":true}
+{"utt_id":"1780509115638-50","cat_source":"miss","path":"no-speak","steps_ms":{"STT first out":2024},"no_speak":true}
+{"utt_id":"1780509118417-51","category":"uncategorized","cat_source":"miss","path":"llm","steps_ms":{"Decide":1029,"LLM output end":401,"LLM output start":390,"Transcription":570},"no_speak":true}

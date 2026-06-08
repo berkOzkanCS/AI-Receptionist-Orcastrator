@@ -1,0 +1,28 @@
+==================== session report ====================
+mode:     live
+duration: 197.3s
+exit:     graceful
+
+stage          count    min    avg    p50    p95    max
+STT 1st out       52    514   1377   1506   2009   2258
+Transcribe        43    523   1194    959   2099   4780
+Cat regex          2   2781   2969   2969   3138   3157
+Cat embed          3    607   1298   1560   1711   1728
+Decide            38    523   1274    960   3309   4784
+Filler fire        0      —      —      —      —      —
+LLM 1st tok       37    390    490    471    677    907
+LLM end           38    396    515    494    668    907
+LLM→audio          0      —      —      —      —      —
+TTS 1st byte       0      —      —      —      —      —
+TTS played         0      —      —      —      —      —
+END-TO-END         0      —      —      —      —      —
+
+utterances: 64 total — 0 completed, 64 no-speak, 0 errored
+
+response paths (counts overlap — an utterance may use several):
+  filler played:        1
+  catalog answer:       0   (predetermined line)
+  llm-generated reply:  37
+  gemini called:        38   (verify or answer)
+  uncategorized (miss): 0   (no regex/embedding hit)
+========================================================

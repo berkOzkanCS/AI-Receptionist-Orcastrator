@@ -1,0 +1,407 @@
+==================== per-utterance step durations ====================
+64 utterances — each line is how long THAT step took
+
+utterance 1780506202334-112 · cat:miss · no-speak
+  step                     took   what it measures
+  STT first out         1576 ms   started speaking → first transcript
+  Transcription          652 ms   finished speaking → text ready
+
+utterance 1780506203776-113 · cat:miss · no-speak
+  step                     took   what it measures
+  STT first out         1996 ms   started speaking → first transcript
+
+utterance 1780506206004-114 · cat:miss · no-speak
+  step                     took   what it measures
+  STT first out         1646 ms   started speaking → first transcript
+  Transcription          519 ms   finished speaking → text ready
+
+utterance 1780506207972-115 · cat:miss · no-speak
+  step                     took   what it measures
+
+utterance 1780506209205-116 · cat:miss · no-speak
+  step                     took   what it measures
+
+utterance 1780506211116-118 · cat:miss · no-speak
+  step                     took   what it measures
+
+utterance 1780506211355-119 · cat:miss · no-speak
+  step                     took   what it measures
+  STT first out         1833 ms   started speaking → first transcript
+  Transcription           79 ms   finished speaking → text ready
+
+utterance 1780506214271-120 · cat:miss · no-speak
+  step                     took   what it measures
+  STT first out         1664 ms   started speaking → first transcript
+  Transcription          615 ms   finished speaking → text ready
+
+utterance 1780506196630-111 · cat:miss · no-speak
+  step                     took   what it measures
+  STT first out         1409 ms   started speaking → first transcript
+  Transcription          527 ms   finished speaking → text ready
+
+utterance 1780506209866-117 · cat:miss · no-speak
+  step                     took   what it measures
+  STT first out         1768 ms   started speaking → first transcript
+
+utterance 1780507268231-121 · cat:miss · no-speak
+  step                     took   what it measures
+
+utterance 1780507485762-122 · cat:miss · no-speak
+  step                     took   what it measures
+
+utterance 1780507521261-123 · cat:miss · no-speak
+  step                     took   what it measures
+
+utterance 1780508963759-1 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out         1588 ms   started speaking → first transcript
+  Transcription          653 ms   finished speaking → text ready
+  Decide                2073 ms   started speaking → route chosen (miss)
+  LLM output start       826 ms   decision → first token
+  LLM output end         826 ms   decision → full reply (output end)
+
+utterance 1780508965484-2 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out         1149 ms   started speaking → first transcript
+  Transcription          641 ms   finished speaking → text ready
+  Decide                1609 ms   started speaking → route chosen (miss)
+  LLM output start       568 ms   decision → first token
+  LLM output end         575 ms   decision → full reply (output end)
+
+utterance 1780508967374-3 · cat:miss · no-speak
+  step                     took   what it measures
+  STT first out         1269 ms   started speaking → first transcript
+
+utterance 1780508969573-4 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out         1457 ms   started speaking → first transcript
+  Transcription          453 ms   finished speaking → text ready
+  Decide                 547 ms   started speaking → route chosen (miss)
+  LLM output start       487 ms   decision → first token
+  LLM output end         573 ms   decision → full reply (output end)
+
+utterance 1780508971278-5 · logistics.address · cat:miss · no-speak
+  step                     took   what it measures
+  STT first out         1510 ms   started speaking → first transcript
+  Transcription          527 ms   finished speaking → text ready
+  Decide                1968 ms   started speaking → route chosen (miss)
+  LLM output end         526 ms   background check, didn't delay the reply
+
+utterance 1780508972969-6 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out         1336 ms   started speaking → first transcript
+  Transcription          659 ms   finished speaking → text ready
+  Decide                1829 ms   started speaking → route chosen (miss)
+  LLM output start       480 ms   decision → first token
+  LLM output end         496 ms   decision → full reply (output end)
+
+utterance 1780508974502-7 · cat:miss · no-speak
+  step                     took   what it measures
+  STT first out         1597 ms   started speaking → first transcript
+
+utterance 1780508976773-8 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out         1349 ms   started speaking → first transcript
+  Transcription          657 ms   finished speaking → text ready
+  Decide                 668 ms   started speaking → route chosen (miss)
+  LLM output start       472 ms   decision → first token
+  LLM output end         513 ms   decision → full reply (output end)
+
+utterance 1780508979016-9 · cat:miss · no-speak
+  step                     took   what it measures
+
+utterance 1780508979714-10 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out          571 ms   started speaking → first transcript
+  Transcription          593 ms   finished speaking → text ready
+  Decide                 991 ms   started speaking → route chosen (miss)
+  LLM output start       460 ms   decision → first token
+  LLM output end         460 ms   decision → full reply (output end)
+
+utterance 1780508980939-11 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out         1741 ms   started speaking → first transcript
+  Transcription          582 ms   finished speaking → text ready
+  Decide                 858 ms   started speaking → route chosen (miss)
+  LLM output start       400 ms   decision → first token
+  LLM output end         400 ms   decision → full reply (output end)
+
+utterance 1780508984575-12 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  Transcription          797 ms   finished speaking → text ready
+  Decide                 592 ms   started speaking → route chosen (miss)
+  LLM output start       448 ms   decision → first token
+  LLM output end         449 ms   decision → full reply (output end)
+
+utterance 1780508988233-14 · cat:miss · no-speak
+  step                     took   what it measures
+
+utterance 1780508985352-13 · appointments.confirm · cat:miss · llm
+  step                     took   what it measures
+  STT first out          596 ms   started speaking → first transcript
+  Transcription          510 ms   finished speaking → text ready
+  Categorize embed       607 ms   started speaking → embedding hit
+  Decide                 982 ms   started speaking → route chosen (miss)
+  LLM output start       441 ms   decision → first token
+  LLM output end         441 ms   decision → full reply (output end)
+
+utterance 1780508988682-15 · cat:miss · no-speak
+  step                     took   what it measures
+  STT first out         1547 ms   started speaking → first transcript
+
+utterance 1780508992836-16 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out         1493 ms   started speaking → first transcript
+  Transcription          585 ms   finished speaking → text ready
+  Decide                 932 ms   started speaking → route chosen (miss)
+  LLM output start       438 ms   decision → first token
+  LLM output end         476 ms   decision → full reply (output end)
+
+utterance 1780508998953-17 · cat:miss · no-speak
+  step                     took   what it measures
+  STT first out         1514 ms   started speaking → first transcript
+
+utterance 1780509000774-18 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out         1580 ms   started speaking → first transcript
+  Transcription          563 ms   finished speaking → text ready
+  Decide                 566 ms   started speaking → route chosen (miss)
+  LLM output start       418 ms   decision → first token
+  LLM output end         433 ms   decision → full reply (output end)
+
+utterance 1780509019152-19 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out         1930 ms   started speaking → first transcript
+  Transcription          603 ms   finished speaking → text ready
+  Decide                4784 ms   started speaking → route chosen (miss)
+  LLM output start       507 ms   decision → first token
+  LLM output end         507 ms   decision → full reply (output end)
+
+utterance 1780509024051-20 · cat:miss · no-speak
+  step                     took   what it measures
+  STT first out         1458 ms   started speaking → first transcript
+
+utterance 1780509025312-21 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out         1554 ms   started speaking → first transcript
+  Transcription          601 ms   finished speaking → text ready
+  Decide                 692 ms   started speaking → route chosen (miss)
+  LLM output start       432 ms   decision → first token
+  LLM output end         432 ms   decision → full reply (output end)
+
+utterance 1780509026755-22 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  Transcription          678 ms   finished speaking → text ready
+  Decide                 784 ms   started speaking → route chosen (miss)
+  LLM output start       456 ms   decision → first token
+  LLM output end         459 ms   decision → full reply (output end)
+
+utterance 1780509037955-23 · cat:miss · no-speak
+  step                     took   what it measures
+  STT first out         1342 ms   started speaking → first transcript
+
+utterance 1780509038935-24 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out         1290 ms   started speaking → first transcript
+  Transcription          569 ms   finished speaking → text ready
+  Decide                 947 ms   started speaking → route chosen (miss)
+  LLM output start       439 ms   decision → first token
+  LLM output end         577 ms   decision → full reply (output end)
+
+utterance 1780509040099-25 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out         1558 ms   started speaking → first transcript
+  Transcription          672 ms   finished speaking → text ready
+  Decide                 654 ms   started speaking → route chosen (miss)
+  LLM output start       443 ms   decision → first token
+  LLM output end         535 ms   decision → full reply (output end)
+
+utterance 1780509041375-26 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out         1691 ms   started speaking → first transcript
+  Transcription          577 ms   finished speaking → text ready
+  Decide                 941 ms   started speaking → route chosen (miss)
+  LLM output start       471 ms   decision → first token
+  LLM output end         471 ms   decision → full reply (output end)
+
+utterance 1780509044800-27 · cat:miss · no-speak
+  step                     took   what it measures
+  STT first out         1552 ms   started speaking → first transcript
+
+utterance 1780509050874-28 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out          608 ms   started speaking → first transcript
+  Transcription          680 ms   finished speaking → text ready
+  Decide                 961 ms   started speaking → route chosen (miss)
+  LLM output start       488 ms   decision → first token
+  LLM output end         488 ms   decision → full reply (output end)
+
+utterance 1780509058334-29 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out          532 ms   started speaking → first transcript
+  Transcription          584 ms   finished speaking → text ready
+  Decide                 971 ms   started speaking → route chosen (miss)
+  LLM output start       463 ms   decision → first token
+  LLM output end         570 ms   decision → full reply (output end)
+
+utterance 1780509066334-30 · cat:miss · no-speak
+  step                     took   what it measures
+  STT first out         1494 ms   started speaking → first transcript
+
+utterance 1780509068115-31 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out          720 ms   started speaking → first transcript
+  Transcription          579 ms   finished speaking → text ready
+  Decide                1159 ms   started speaking → route chosen (miss)
+  LLM output start       474 ms   decision → first token
+  LLM output end         474 ms   decision → full reply (output end)
+
+utterance 1780509073178-32 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out         1510 ms   started speaking → first transcript
+  Transcription          458 ms   finished speaking → text ready
+  Decide                3314 ms   started speaking → route chosen (miss)
+  LLM output start       458 ms   decision → first token
+  LLM output end         459 ms   decision → full reply (output end)
+
+utterance 1780509078464-33 · cat:miss · no-speak
+  step                     took   what it measures
+  STT first out         1489 ms   started speaking → first transcript
+
+utterance 1780509080893-34 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out          514 ms   started speaking → first transcript
+  Transcription          581 ms   finished speaking → text ready
+  Decide                 868 ms   started speaking → route chosen (miss)
+  LLM output start       498 ms   decision → first token
+  LLM output end         498 ms   decision → full reply (output end)
+
+utterance 1780509082034-35 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out         1503 ms   started speaking → first transcript
+  Transcription          602 ms   finished speaking → text ready
+  Decide                 875 ms   started speaking → route chosen (miss)
+  LLM output start       500 ms   decision → first token
+  LLM output end         500 ms   decision → full reply (output end)
+
+utterance 1780509083556-36 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out         1340 ms   started speaking → first transcript
+  Transcription          487 ms   finished speaking → text ready
+  Decide                 598 ms   started speaking → route chosen (miss)
+  LLM output start       473 ms   decision → first token
+  LLM output end         473 ms   decision → full reply (output end)
+
+utterance 1780509084854-37 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  Transcription          589 ms   finished speaking → text ready
+  Decide                 586 ms   started speaking → route chosen (miss)
+  LLM output start       907 ms   decision → first token
+  LLM output end         907 ms   decision → full reply (output end)
+
+utterance 1780509085597-38 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out          646 ms   started speaking → first transcript
+  Transcription          638 ms   finished speaking → text ready
+  Decide                1146 ms   started speaking → route chosen (miss)
+  LLM output start       421 ms   decision → first token
+  LLM output end         421 ms   decision → full reply (output end)
+
+utterance 1780509087235-39 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out          563 ms   started speaking → first transcript
+  Transcription          485 ms   finished speaking → text ready
+  Decide                 962 ms   started speaking → route chosen (miss)
+  LLM output start       491 ms   decision → first token
+  LLM output end         493 ms   decision → full reply (output end)
+
+utterance 1780509090614-40 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out          599 ms   started speaking → first transcript
+  Transcription          776 ms   finished speaking → text ready
+  Decide                1173 ms   started speaking → route chosen (miss)
+  LLM output start       449 ms   decision → first token
+  LLM output end         449 ms   decision → full reply (output end)
+
+utterance 1780509093701-41 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out          524 ms   started speaking → first transcript
+  Transcription          575 ms   finished speaking → text ready
+  Decide                 959 ms   started speaking → route chosen (miss)
+  LLM output start       423 ms   decision → first token
+  LLM output end         533 ms   decision → full reply (output end)
+
+utterance 1780509095740-42 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out         1498 ms   started speaking → first transcript
+  Transcription          516 ms   finished speaking → text ready
+  Decide                 773 ms   started speaking → route chosen (miss)
+  LLM output start       512 ms   decision → first token
+  LLM output end         557 ms   decision → full reply (output end)
+
+utterance 1780509098519-43 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out         1542 ms   started speaking → first transcript
+  Transcription          511 ms   finished speaking → text ready
+  Categorize embed      1560 ms   started speaking → embedding hit
+  Decide                 523 ms   started speaking → route chosen (miss)
+  LLM output start       479 ms   decision → first token
+  LLM output end         492 ms   decision → full reply (output end)
+
+utterance 1780509100695-44 · uncategorized · cat:regex · filler→llm
+  step                     took   what it measures
+  STT first out         2258 ms   started speaking → first transcript
+  Transcription          594 ms   finished speaking → text ready
+  Categorize regex      2781 ms   started speaking → regex hit
+  Decide                2932 ms   started speaking → route chosen (regex)
+  LLM output start       396 ms   decision → first token
+  LLM output end         396 ms   decision → full reply (output end)
+
+utterance 1780509105069-45 · cat:miss · no-speak
+  step                     took   what it measures
+  STT first out         2050 ms   started speaking → first transcript
+
+utterance 1780509106724-46 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out         1600 ms   started speaking → first transcript
+  Transcription          756 ms   finished speaking → text ready
+  Decide                 787 ms   started speaking → route chosen (miss)
+  LLM output start       530 ms   decision → first token
+  LLM output end         530 ms   decision → full reply (output end)
+
+utterance 1780509109081-47 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out         1685 ms   started speaking → first transcript
+  Transcription         1102 ms   finished speaking → text ready
+  Decide                1064 ms   started speaking → route chosen (miss)
+  LLM output start       441 ms   decision → first token
+  LLM output end         620 ms   decision → full reply (output end)
+
+utterance 1780509110691-48 · uncategorized · cat:regex · llm
+  step                     took   what it measures
+  STT first out          704 ms   started speaking → first transcript
+  Transcription          486 ms   finished speaking → text ready
+  Categorize regex      3157 ms   started speaking → regex hit
+  Categorize embed      1728 ms   started speaking → embedding hit
+  Decide                3308 ms   started speaking → route chosen (regex)
+  LLM output start       526 ms   decision → first token
+  LLM output end         526 ms   decision → full reply (output end)
+
+utterance 1780509113978-49 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  STT first out         1632 ms   started speaking → first transcript
+  Transcription          414 ms   finished speaking → text ready
+  Decide                1995 ms   started speaking → route chosen (miss)
+  LLM output start       640 ms   decision → first token
+  LLM output end         640 ms   decision → full reply (output end)
+
+utterance 1780509115638-50 · cat:miss · no-speak
+  step                     took   what it measures
+  STT first out         2024 ms   started speaking → first transcript
+
+utterance 1780509118417-51 · uncategorized · cat:miss · llm
+  step                     took   what it measures
+  Transcription          570 ms   finished speaking → text ready
+  Decide                1029 ms   started speaking → route chosen (miss)
+  LLM output start       390 ms   decision → first token
+  LLM output end         401 ms   decision → full reply (output end)
